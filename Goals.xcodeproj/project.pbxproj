@@ -14,6 +14,7 @@
 		9B153A711DCFC58B00F0BEEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B153A701DCFC58B00F0BEEE /* Assets.xcassets */; };
 		9B153A741DCFC58B00F0BEEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B153A721DCFC58B00F0BEEE /* LaunchScreen.storyboard */; };
 		9B153A7C1DCFC8B200F0BEEE /* CustomNavbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B153A7B1DCFC8B200F0BEEE /* CustomNavbar.swift */; };
+		9B153A7E1DCFF93E00F0BEEE /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B153A7D1DCFF93E00F0BEEE /* GoalCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		9B153A731DCFC58B00F0BEEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B153A751DCFC58B00F0BEEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B153A7B1DCFC8B200F0BEEE /* CustomNavbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavbar.swift; sourceTree = "<group>"; };
+		9B153A7D1DCFF93E00F0BEEE /* GoalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoalCell.swift; path = Assets.xcassets/GoalCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				9B153A661DCFC58B00F0BEEE /* AppDelegate.swift */,
 				9B153A681DCFC58B00F0BEEE /* GoalsVC.swift */,
 				9B153A6A1DCFC58B00F0BEEE /* Main.storyboard */,
+				9B153A7D1DCFF93E00F0BEEE /* GoalCell.swift */,
 				9B153A7B1DCFC8B200F0BEEE /* CustomNavbar.swift */,
 				9B153A701DCFC58B00F0BEEE /* Assets.xcassets */,
 				9B153A721DCFC58B00F0BEEE /* LaunchScreen.storyboard */,
@@ -146,6 +149,7 @@
 				9B153A691DCFC58B00F0BEEE /* GoalsVC.swift in Sources */,
 				9B153A671DCFC58B00F0BEEE /* AppDelegate.swift in Sources */,
 				9B153A7C1DCFC8B200F0BEEE /* CustomNavbar.swift in Sources */,
+				9B153A7E1DCFF93E00F0BEEE /* GoalCell.swift in Sources */,
 				9B153A6F1DCFC58B00F0BEEE /* Goals.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
