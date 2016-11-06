@@ -98,6 +98,9 @@
                     <navigationItem key="navigationItem" title="GOALS" id="FFO-zE-9Ag">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Fqr-Ic-9ST"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="iw4-Nm-kgk" id="MM9-7d-Bax"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
