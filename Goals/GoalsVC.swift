@@ -19,7 +19,7 @@ class GoalsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "GoalCell") {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "GoalCell") as? GoalCell {
             return cell
         }
         

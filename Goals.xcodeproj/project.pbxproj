@@ -62,11 +62,11 @@
 			children = (
 				9B153A661DCFC58B00F0BEEE /* AppDelegate.swift */,
 				9B153A681DCFC58B00F0BEEE /* GoalsVC.swift */,
-				9B153A6A1DCFC58B00F0BEEE /* Main.storyboard */,
 				9B153A7D1DCFF93E00F0BEEE /* GoalCell.swift */,
 				9B153A7B1DCFC8B200F0BEEE /* CustomNavbar.swift */,
-				9B153A701DCFC58B00F0BEEE /* Assets.xcassets */,
+				9B153A6A1DCFC58B00F0BEEE /* Main.storyboard */,
 				9B153A721DCFC58B00F0BEEE /* LaunchScreen.storyboard */,
+				9B153A701DCFC58B00F0BEEE /* Assets.xcassets */,
 				9B153A751DCFC58B00F0BEEE /* Info.plist */,
 				9B153A6D1DCFC58B00F0BEEE /* Goals.xcdatamodeld */,
 			);
