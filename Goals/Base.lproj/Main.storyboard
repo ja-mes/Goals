@@ -28,13 +28,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="plus" translatesAutoresizingMaskIntoConstraints="NO" id="xlk-wm-mAr">
-                                <rect key="frame" x="329" y="45" width="20" height="20"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="W7V-8A-akC"/>
-                                    <constraint firstAttribute="width" constant="20" id="kTS-Tm-6Mn"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="November 11, 2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZkC-Tn-aS5">
                                 <rect key="frame" x="118" y="96" width="138.5" height="21"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
@@ -84,18 +77,25 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3N-fP-UrL">
+                                <rect key="frame" x="339" y="45" width="20" height="22"/>
+                                <state key="normal" image="plus"/>
+                                <connections>
+                                    <segue destination="MrB-al-WmQ" kind="show" id="SKP-EM-ySu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="iw4-Nm-kgk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1vn-zz-nSJ"/>
+                            <constraint firstItem="U3N-fP-UrL" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="4jB-hS-AUp"/>
                             <constraint firstItem="lHG-AW-2aH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9B9-2T-L2A"/>
                             <constraint firstItem="iw4-Nm-kgk" firstAttribute="top" secondItem="ZkC-Tn-aS5" secondAttribute="bottom" constant="30" id="AIC-ji-1eE"/>
                             <constraint firstItem="ZkC-Tn-aS5" firstAttribute="top" secondItem="lHG-AW-2aH" secondAttribute="bottom" constant="15" id="C50-4i-8GW"/>
                             <constraint firstItem="ZkC-Tn-aS5" firstAttribute="centerX" secondItem="lHG-AW-2aH" secondAttribute="centerX" id="FEk-tR-rfX"/>
                             <constraint firstItem="lHG-AW-2aH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Lin-zX-nY5"/>
-                            <constraint firstItem="xlk-wm-mAr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="kB6-Aa-Syx"/>
                             <constraint firstAttribute="trailing" secondItem="iw4-Nm-kgk" secondAttribute="trailing" id="o2T-qb-52E"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="xlk-wm-mAr" secondAttribute="trailing" constant="10" id="oaG-8D-crx"/>
+                            <constraint firstItem="U3N-fP-UrL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="ptX-Cw-odU"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iw4-Nm-kgk" secondAttribute="bottom" id="uqj-7D-EAM"/>
                         </constraints>
                     </view>
@@ -129,7 +129,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHG-VI-2DE">
-                                <rect key="frame" x="26" y="45" width="13" height="22"/>
+                                <rect key="frame" x="16" y="45" width="13" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="13" id="ASO-BL-cBP"/>
                                     <constraint firstAttribute="height" constant="22" id="wB0-au-qzY"/>
@@ -137,8 +137,8 @@
                                 <state key="normal" image="Back Chevron"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Save" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m50-d6-Adx">
-                                <rect key="frame" x="309" y="45" width="40" height="25"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                                <rect key="frame" x="315" y="45" width="44" height="27.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
                                 <color key="textColor" red="0.96078431372549022" green="0.65098039215686276" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -148,15 +148,15 @@
                             <constraint firstItem="TXs-PV-gJu" firstAttribute="centerX" secondItem="uxC-G4-S9k" secondAttribute="centerX" id="8il-Rn-imC"/>
                             <constraint firstItem="UHG-VI-2DE" firstAttribute="top" secondItem="b1a-58-6HC" secondAttribute="bottom" constant="25" id="GSZ-FD-L6T"/>
                             <constraint firstItem="TXs-PV-gJu" firstAttribute="top" secondItem="b1a-58-6HC" secondAttribute="bottom" constant="20" id="Rj6-Oq-Rtq"/>
-                            <constraint firstItem="m50-d6-Adx" firstAttribute="trailing" secondItem="uxC-G4-S9k" secondAttribute="trailingMargin" constant="-10" id="YEa-NA-uLY"/>
+                            <constraint firstItem="m50-d6-Adx" firstAttribute="trailing" secondItem="uxC-G4-S9k" secondAttribute="trailingMargin" id="YEa-NA-uLY"/>
                             <constraint firstItem="m50-d6-Adx" firstAttribute="top" secondItem="b1a-58-6HC" secondAttribute="bottom" constant="25" id="fhI-Zi-aeG"/>
-                            <constraint firstItem="UHG-VI-2DE" firstAttribute="leading" secondItem="uxC-G4-S9k" secondAttribute="leadingMargin" constant="10" id="q1J-lb-Rye"/>
+                            <constraint firstItem="UHG-VI-2DE" firstAttribute="leading" secondItem="uxC-G4-S9k" secondAttribute="leadingMargin" id="q1J-lb-Rye"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lww-hM-a0g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1950" y="139"/>
+            <point key="canvasLocation" x="1949.5999999999999" y="138.98050974512745"/>
         </scene>
     </scenes>
     <resources>
