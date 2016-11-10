@@ -18,6 +18,7 @@
 		9B153A821DD3DDAF00F0BEEE /* GoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B153A811DD3DDAF00F0BEEE /* GoalView.swift */; };
 		9B153A8F1DD4050000F0BEEE /* CustomField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B153A8E1DD4050000F0BEEE /* CustomField.swift */; };
 		9BB93E3D1DD4E5A100A59FDF /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB93E3C1DD4E5A100A59FDF /* CircleView.swift */; };
+		9BB93E3F1DD4F89300A59FDF /* ColorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB93E3E1DD4F89300A59FDF /* ColorHex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		9B153A811DD3DDAF00F0BEEE /* GoalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalView.swift; sourceTree = "<group>"; };
 		9B153A8E1DD4050000F0BEEE /* CustomField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomField.swift; sourceTree = "<group>"; };
 		9BB93E3C1DD4E5A100A59FDF /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		9BB93E3E1DD4F89300A59FDF /* ColorHex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorHex.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 		9B153A851DD3F88100F0BEEE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9BB93E3E1DD4F89300A59FDF /* ColorHex.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BB93E3D1DD4E5A100A59FDF /* CircleView.swift in Sources */,
+				9BB93E3F1DD4F89300A59FDF /* ColorHex.swift in Sources */,
 				9B153A801DD015EF00F0BEEE /* AddVC.swift in Sources */,
 				9B153A691DCFC58B00F0BEEE /* GoalsVC.swift in Sources */,
 				9B153A8F1DD4050000F0BEEE /* CustomField.swift in Sources */,

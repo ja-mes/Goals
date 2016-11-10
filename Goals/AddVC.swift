@@ -33,7 +33,7 @@ class AddVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSou
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return 20
     }
     
     @IBAction func backPressed(_ sender: Any) {
