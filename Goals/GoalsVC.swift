@@ -108,7 +108,12 @@ class GoalsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSF
     func configureCell(cell: GoalCell, indexPath: IndexPath) {
         let goal = controller.object(at: indexPath)
         cell.nameLbl.text = goal.name
-        cell.dateLbl.text = String(describing: goal.date)
+        
+        if let date = goal.date {
+            let formatter = DateFormatter()
+            formatter.dateStyle = .long
+            cell.dateLbl.text = formatter.string(from: date as Date)
+        }
     }
 
 
