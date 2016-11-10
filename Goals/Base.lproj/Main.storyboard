@@ -176,6 +176,21 @@
                                     </textField>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DATE TO COMPLETE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P0G-fh-ztJ">
+                                <rect key="frame" x="16" y="233" width="146.5" height="20.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="jDJ-s5-94d">
+                                <rect key="frame" x="0.0" y="268" width="375" height="166"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="166" id="Mzc-o4-7RO"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="500434651.620453">
+                                    <!--2016-11-10 01:37:31 +0000-->
+                                </date>
+                            </datePicker>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -183,9 +198,14 @@
                             <constraint firstAttribute="trailingMargin" secondItem="Mha-26-Ikh" secondAttribute="trailing" id="27c-bX-1Rx"/>
                             <constraint firstAttribute="trailingMargin" secondItem="sZr-If-iaI" secondAttribute="trailing" id="3fF-Iw-GbH"/>
                             <constraint firstItem="sZr-If-iaI" firstAttribute="leading" secondItem="uxC-G4-S9k" secondAttribute="leadingMargin" id="40I-HN-ure"/>
+                            <constraint firstItem="jDJ-s5-94d" firstAttribute="leading" secondItem="uxC-G4-S9k" secondAttribute="leading" id="8SM-0Q-kfg"/>
+                            <constraint firstItem="P0G-fh-ztJ" firstAttribute="top" secondItem="sZr-If-iaI" secondAttribute="bottom" constant="47" id="9aa-BV-Lwn"/>
+                            <constraint firstItem="P0G-fh-ztJ" firstAttribute="leading" secondItem="uxC-G4-S9k" secondAttribute="leadingMargin" id="9bY-DQ-ufK"/>
                             <constraint firstItem="TXs-PV-gJu" firstAttribute="leading" secondItem="UHG-VI-2DE" secondAttribute="trailing" constant="8" id="GFg-em-ukN"/>
+                            <constraint firstItem="jDJ-s5-94d" firstAttribute="top" secondItem="P0G-fh-ztJ" secondAttribute="bottom" constant="15" id="HeO-UC-UGH"/>
                             <constraint firstItem="uA5-k7-4dS" firstAttribute="top" secondItem="b1a-58-6HC" secondAttribute="bottom" constant="10" id="PEL-3k-JLF"/>
                             <constraint firstItem="uA5-k7-4dS" firstAttribute="leading" secondItem="TXs-PV-gJu" secondAttribute="trailing" constant="8" id="ZfC-XZ-A1k"/>
+                            <constraint firstAttribute="trailing" secondItem="jDJ-s5-94d" secondAttribute="trailing" id="bcI-VX-eA5"/>
                             <constraint firstItem="UHG-VI-2DE" firstAttribute="top" secondItem="b1a-58-6HC" secondAttribute="bottom" constant="5" id="grU-4l-LYj"/>
                             <constraint firstAttribute="trailingMargin" secondItem="uA5-k7-4dS" secondAttribute="trailing" id="on7-dh-ukg"/>
                             <constraint firstItem="sZr-If-iaI" firstAttribute="top" secondItem="UHG-VI-2DE" secondAttribute="bottom" constant="24" id="vge-nf-EDs"/>
