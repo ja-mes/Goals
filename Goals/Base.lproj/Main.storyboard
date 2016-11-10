@@ -73,6 +73,10 @@
                                                 <constraint firstItem="PRK-XI-2iD" firstAttribute="top" secondItem="JTZ-7E-Q2M" secondAttribute="topMargin" id="uX7-P0-H3H"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dateLbl" destination="DCN-X6-p7Q" id="gOC-SR-ibF"/>
+                                            <outlet property="nameLbl" destination="sOr-uU-ukk" id="ci8-my-qTC"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
