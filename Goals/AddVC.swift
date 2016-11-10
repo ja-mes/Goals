@@ -25,29 +25,24 @@ class AddVC: UIViewController {
     }
 
     @IBAction func savePressed(_ sender: UIButton) {
-        let goal = Goal(context: context)
-
-        if configure(goal: goal) {
+        if let goal = configure() {
             goal.date = datePicker.date as NSDate?
             goal.color = "exampleColor"
             
             appDel.saveContext()
             
             dismiss(animated: true, completion: nil)
-        } else {
-            if goal.objectID.isTemporaryID {
-                context.delete(goal)
-            }
         }
     }
     
-    func configure(goal: Goal) -> Bool {
+    func configure() -> Goal? {
         if let text = name.text, text.isEmpty == false {
+            let goal = Goal(context: context)
             goal.name = text
             
-            return true
+            return goal
         }
         
-        return false
+        return nil
     }
 }
