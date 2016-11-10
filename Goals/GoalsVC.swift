@@ -37,6 +37,13 @@ class GoalsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSF
         return 5
     }
     
+    func fetchGoals() {
+        let fetchRequest: NSFetchRequest<Goal> = Goal.fetchRequest()
+        fetchRequest.sortDescriptors = [NSSortDescriptor(key: "date", ascending: true)]
+        
+        let controller = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
+    }
+    
     func configureCell(cell: GoalCell, indexPath: IndexPath) {
         let goal = controller.object(at: indexPath)
         cell.nameLbl.text = goal.name
