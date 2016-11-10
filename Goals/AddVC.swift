@@ -13,6 +13,7 @@ class AddVC: UIViewController {
     @IBOutlet weak var name: CustomField!
     @IBOutlet weak var datePicker: UIDatePicker!
     
+    var color: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +26,12 @@ class AddVC: UIViewController {
     @IBAction func savePressed(_ sender: UIButton) {
         if let goal = configure() {
             goal.date = datePicker.date as NSDate?
-            goal.color = "exampleColor"
+            
+            if let color = color {
+                goal.color = color
+            } else {
+                goal.color = ""
+            }
             
             appDel.saveContext()
             
@@ -37,8 +43,7 @@ class AddVC: UIViewController {
     
     @IBAction func colorPressed(_ sender: UIButton) {
         if let color = sender.backgroundColor {
-            
-            print(color.toHexString())
+            self.color = color.toHexString()
         }
     }
     
