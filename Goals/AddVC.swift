@@ -32,6 +32,8 @@ class AddVC: UIViewController {
             appDel.saveContext()
             
             dismiss(animated: true, completion: nil)
+        } else {
+            displayAlert(title: "Oops!", message: "You forgot to fill out the name field")
         }
     }
     
@@ -44,5 +46,13 @@ class AddVC: UIViewController {
         }
         
         return nil
+    }
+    
+    func displayAlert(title: String, message: String) {
+        let alertController = UIAlertController(title: title, message:
+            message, preferredStyle: UIAlertControllerStyle.alert)
+        alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default,handler: nil))
+        
+        self.present(alertController, animated: true, completion: nil)
     }
 }
