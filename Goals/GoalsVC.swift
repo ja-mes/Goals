@@ -7,11 +7,12 @@
 //
 
 import UIKit
+import CoreData
 
-class GoalsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class GoalsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSFetchedResultsControllerDelegate {
     @IBOutlet weak var tableView: UITableView!
     
-    
+    var controller: NSFetchedResultsController<Goal>!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +35,12 @@ class GoalsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
+    }
+    
+    func configureCell(cell: GoalCell, indexPath: IndexPath) {
+        let goal = controller.object(at: indexPath)
+        cell.nameLbl.text = goal.name
+        cell.dateLbl.text = String(describing: goal.date)
     }
 
 
