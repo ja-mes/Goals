@@ -210,7 +210,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="CBg-ei-gdD">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ColorCelll" id="CBg-ei-gdD">
                                         <rect key="frame" x="0.0" y="0.0" width="36" height="33"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -270,6 +270,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="collectionView" destination="wb3-y0-qB9" id="5QG-Mh-L6M"/>
                         <outlet property="datePicker" destination="jDJ-s5-94d" id="4l0-zt-HnU"/>
                         <outlet property="name" destination="Mha-26-Ikh" id="ool-3h-uNa"/>
                     </connections>

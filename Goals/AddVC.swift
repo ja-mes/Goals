@@ -8,16 +8,34 @@
 
 import UIKit
 
-class AddVC: UIViewController {
+class AddVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
+    @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var name: CustomField!
     @IBOutlet weak var datePicker: UIDatePicker!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
+        collectionView.delegate = self
+        collectionView.dataSource = self
+    }
+    
+    // MARK: collection view
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        //let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ColorCell", for: indexPath)
+        //return cell
+        
+        return UICollectionViewCell()
+    }
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 3
     }
     
     @IBAction func backPressed(_ sender: Any) {
