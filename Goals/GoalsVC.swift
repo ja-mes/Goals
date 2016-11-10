@@ -19,11 +19,15 @@ class GoalsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSF
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        fetchGoals()
+        
     }
     
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "GoalCell") as? GoalCell {
+            configureCell(cell: cell, indexPath: indexPath)
             return cell
         }
         
@@ -31,11 +35,19 @@ class GoalsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSF
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
+        if let sections = controller.sections {
+            return sections.count
+        }
+        
         return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        if let sections = controller.sections {
+            return sections[section].numberOfObjects
+        }
+        
+        return 0
     }
     
     // MARK: fetched results controller
