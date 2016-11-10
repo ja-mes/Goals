@@ -24,10 +24,8 @@ class AddVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSou
     
     // MARK: collection view
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        //let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ColorCell", for: indexPath)
-        //return cell
-        
-        return UICollectionViewCell()
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ColorCell", for: indexPath)
+        return cell
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
