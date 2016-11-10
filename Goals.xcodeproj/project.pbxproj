@@ -16,6 +16,7 @@
 		9B153A7E1DCFF93E00F0BEEE /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B153A7D1DCFF93E00F0BEEE /* GoalCell.swift */; };
 		9B153A801DD015EF00F0BEEE /* AddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B153A7F1DD015EF00F0BEEE /* AddVC.swift */; };
 		9B153A821DD3DDAF00F0BEEE /* GoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B153A811DD3DDAF00F0BEEE /* GoalView.swift */; };
+		9B153A8F1DD4050000F0BEEE /* CustomField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B153A8E1DD4050000F0BEEE /* CustomField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		9B153A7D1DCFF93E00F0BEEE /* GoalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoalCell.swift; path = Assets.xcassets/GoalCell.swift; sourceTree = "<group>"; };
 		9B153A7F1DD015EF00F0BEEE /* AddVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddVC.swift; sourceTree = "<group>"; };
 		9B153A811DD3DDAF00F0BEEE /* GoalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalView.swift; sourceTree = "<group>"; };
+		9B153A8E1DD4050000F0BEEE /* CustomField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			children = (
 				9B153A7D1DCFF93E00F0BEEE /* GoalCell.swift */,
 				9B153A811DD3DDAF00F0BEEE /* GoalView.swift */,
+				9B153A8E1DD4050000F0BEEE /* CustomField.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 			files = (
 				9B153A801DD015EF00F0BEEE /* AddVC.swift in Sources */,
 				9B153A691DCFC58B00F0BEEE /* GoalsVC.swift in Sources */,
+				9B153A8F1DD4050000F0BEEE /* CustomField.swift in Sources */,
 				9B153A671DCFC58B00F0BEEE /* AppDelegate.swift in Sources */,
 				9B153A7E1DCFF93E00F0BEEE /* GoalCell.swift in Sources */,
 				9B153A821DD3DDAF00F0BEEE /* GoalView.swift in Sources */,
