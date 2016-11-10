@@ -197,43 +197,6 @@
                                     <!--2016-11-10 01:37:31 +0000-->
                                 </date>
                             </datePicker>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wb3-y0-qB9">
-                                <rect key="frame" x="16" y="492.5" width="343" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="FLX-T4-q8J"/>
-                                </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="TzI-WE-YSl">
-                                    <size key="itemSize" width="35" height="35"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ColorCell" id="CBg-ei-gdD">
-                                        <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1uT-9d-DZr" customClass="CircleView" customModule="Goals" customModuleProvider="target">
-                                                    <rect key="frame" x="7.5" y="7.5" width="20" height="20"/>
-                                                    <color key="backgroundColor" red="0.26274509800000001" green="0.61176470589999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="20" id="Ink-EW-6ef"/>
-                                                        <constraint firstAttribute="width" constant="20" id="VYI-EY-qgJ"/>
-                                                    </constraints>
-                                                </view>
-                                            </subviews>
-                                        </view>
-                                        <constraints>
-                                            <constraint firstItem="1uT-9d-DZr" firstAttribute="centerY" secondItem="CBg-ei-gdD" secondAttribute="centerY" id="b9m-HH-wSU"/>
-                                            <constraint firstItem="1uT-9d-DZr" firstAttribute="centerX" secondItem="CBg-ei-gdD" secondAttribute="centerX" id="tfU-Q5-eFP"/>
-                                        </constraints>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COLOR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6S-DR-juc">
                                 <rect key="frame" x="16" y="462" width="52.5" height="20.5"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
@@ -250,12 +213,10 @@
                             <constraint firstItem="jDJ-s5-94d" firstAttribute="leading" secondItem="uxC-G4-S9k" secondAttribute="leading" id="8SM-0Q-kfg"/>
                             <constraint firstItem="P0G-fh-ztJ" firstAttribute="top" secondItem="sZr-If-iaI" secondAttribute="bottom" constant="47" id="9aa-BV-Lwn"/>
                             <constraint firstItem="P0G-fh-ztJ" firstAttribute="leading" secondItem="uxC-G4-S9k" secondAttribute="leadingMargin" id="9bY-DQ-ufK"/>
-                            <constraint firstItem="wb3-y0-qB9" firstAttribute="trailing" secondItem="uxC-G4-S9k" secondAttribute="trailingMargin" id="Elw-0I-Hr5"/>
                             <constraint firstItem="TXs-PV-gJu" firstAttribute="leading" secondItem="UHG-VI-2DE" secondAttribute="trailing" constant="8" id="GFg-em-ukN"/>
                             <constraint firstItem="J6S-DR-juc" firstAttribute="top" secondItem="jDJ-s5-94d" secondAttribute="bottom" constant="28" id="HVc-a8-f5Y"/>
                             <constraint firstItem="jDJ-s5-94d" firstAttribute="top" secondItem="P0G-fh-ztJ" secondAttribute="bottom" constant="15" id="HeO-UC-UGH"/>
                             <constraint firstItem="uA5-k7-4dS" firstAttribute="top" secondItem="b1a-58-6HC" secondAttribute="bottom" constant="10" id="PEL-3k-JLF"/>
-                            <constraint firstItem="wb3-y0-qB9" firstAttribute="top" secondItem="J6S-DR-juc" secondAttribute="bottom" constant="10" id="YBg-NE-Shj"/>
                             <constraint firstItem="uA5-k7-4dS" firstAttribute="leading" secondItem="TXs-PV-gJu" secondAttribute="trailing" constant="8" id="ZfC-XZ-A1k"/>
                             <constraint firstAttribute="trailing" secondItem="jDJ-s5-94d" secondAttribute="trailing" id="bcI-VX-eA5"/>
                             <constraint firstItem="UHG-VI-2DE" firstAttribute="top" secondItem="b1a-58-6HC" secondAttribute="bottom" constant="5" id="grU-4l-LYj"/>
@@ -263,12 +224,10 @@
                             <constraint firstItem="J6S-DR-juc" firstAttribute="leading" secondItem="uxC-G4-S9k" secondAttribute="leadingMargin" id="p6E-uV-1cJ"/>
                             <constraint firstItem="sZr-If-iaI" firstAttribute="top" secondItem="UHG-VI-2DE" secondAttribute="bottom" constant="24" id="vge-nf-EDs"/>
                             <constraint firstItem="UHG-VI-2DE" firstAttribute="leading" secondItem="uxC-G4-S9k" secondAttribute="leading" id="we4-Bw-sJV"/>
-                            <constraint firstItem="wb3-y0-qB9" firstAttribute="leading" secondItem="uxC-G4-S9k" secondAttribute="leadingMargin" id="yru-jM-cww"/>
                             <constraint firstItem="TXs-PV-gJu" firstAttribute="centerX" secondItem="uxC-G4-S9k" secondAttribute="centerX" id="yx1-OU-Ut7"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="collectionView" destination="wb3-y0-qB9" id="5QG-Mh-L6M"/>
                         <outlet property="datePicker" destination="jDJ-s5-94d" id="4l0-zt-HnU"/>
                         <outlet property="name" destination="Mha-26-Ikh" id="ool-3h-uNa"/>
                     </connections>
