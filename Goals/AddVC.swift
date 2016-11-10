@@ -35,6 +35,13 @@ class AddVC: UIViewController {
         }
     }
     
+    @IBAction func colorPressed(_ sender: UIButton) {
+        if let color = sender.backgroundColor {
+            print(color.toHexString())
+        }
+    }
+    
+    
     func configure() -> Goal? {
         if let text = name.text, text.isEmpty == false {
             let goal = Goal(context: context)
