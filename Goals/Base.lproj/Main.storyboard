@@ -217,7 +217,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="36" height="33"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1uT-9d-DZr">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1uT-9d-DZr" customClass="CircleView" customModule="Goals" customModuleProvider="target">
                                                     <rect key="frame" x="8" y="7" width="20" height="20"/>
                                                     <color key="backgroundColor" red="0.26274509800000001" green="0.61176470589999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>

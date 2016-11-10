@@ -17,6 +17,7 @@
 		9B153A801DD015EF00F0BEEE /* AddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B153A7F1DD015EF00F0BEEE /* AddVC.swift */; };
 		9B153A821DD3DDAF00F0BEEE /* GoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B153A811DD3DDAF00F0BEEE /* GoalView.swift */; };
 		9B153A8F1DD4050000F0BEEE /* CustomField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B153A8E1DD4050000F0BEEE /* CustomField.swift */; };
+		9BB93E3D1DD4E5A100A59FDF /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB93E3C1DD4E5A100A59FDF /* CircleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		9B153A7F1DD015EF00F0BEEE /* AddVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddVC.swift; sourceTree = "<group>"; };
 		9B153A811DD3DDAF00F0BEEE /* GoalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalView.swift; sourceTree = "<group>"; };
 		9B153A8E1DD4050000F0BEEE /* CustomField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomField.swift; sourceTree = "<group>"; };
+		9BB93E3C1DD4E5A100A59FDF /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				9B153A831DD3F87700F0BEEE /* Controller */,
 				9B153A661DCFC58B00F0BEEE /* AppDelegate.swift */,
 				9B153A6A1DCFC58B00F0BEEE /* Main.storyboard */,
+				9BB93E3C1DD4E5A100A59FDF /* CircleView.swift */,
 				9B153A721DCFC58B00F0BEEE /* LaunchScreen.storyboard */,
 				9B153A701DCFC58B00F0BEEE /* Assets.xcassets */,
 				9B153A751DCFC58B00F0BEEE /* Info.plist */,
@@ -176,6 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BB93E3D1DD4E5A100A59FDF /* CircleView.swift in Sources */,
 				9B153A801DD015EF00F0BEEE /* AddVC.swift in Sources */,
 				9B153A691DCFC58B00F0BEEE /* GoalsVC.swift in Sources */,
 				9B153A8F1DD4050000F0BEEE /* CustomField.swift in Sources */,
