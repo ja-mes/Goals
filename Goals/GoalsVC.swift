@@ -61,7 +61,7 @@ class GoalsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSF
             break
         case.update:
             if let indexPath = indexPath {
-                if let cell = tableView.cellForRow(at: indexPath) as? ReminderCell {
+                if let cell = tableView.cellForRow(at: indexPath) as? GoalCell {
                     configureCell(cell: cell, indexPath: indexPath)
                 }
             }
