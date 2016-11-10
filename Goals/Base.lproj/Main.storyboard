@@ -42,18 +42,17 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PRK-XI-2iD" customClass="GoalView" customModule="Goals" customModuleProvider="target">
                                                     <rect key="frame" x="16" y="8" width="343" height="63"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="GnI-e9-hvE">
-                                                            <rect key="frame" x="15" y="8" width="120" height="44"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="GnI-e9-hvE">
+                                                            <rect key="frame" x="15" y="8" width="320" height="47"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="RUN 10 MILES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOr-uU-ukk">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="120" height="25"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="28"/>
                                                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
                                                                     <color key="textColor" red="0.99990183115005493" green="1" blue="0.99987989664077759" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="NOVEMBER 11, 2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DCN-X6-p7Q">
-                                                                    <rect key="frame" x="0.0" y="30" width="120" height="14"/>
+                                                                    <rect key="frame" x="0.0" y="33" width="320" height="14"/>
                                                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="10"/>
                                                                     <color key="textColor" red="0.99990183115005493" green="1" blue="0.99987989664077759" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
@@ -64,6 +63,10 @@
                                                     <color key="backgroundColor" red="1" green="0.15744972229003906" blue="0.14414456486701965" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="63" id="CYW-qF-Zx1"/>
+                                                        <constraint firstItem="GnI-e9-hvE" firstAttribute="top" secondItem="PRK-XI-2iD" secondAttribute="top" constant="8" id="E1b-dn-lb7"/>
+                                                        <constraint firstAttribute="trailing" secondItem="GnI-e9-hvE" secondAttribute="trailing" constant="8" id="FjT-dB-FiR"/>
+                                                        <constraint firstItem="GnI-e9-hvE" firstAttribute="leading" secondItem="PRK-XI-2iD" secondAttribute="leading" constant="15" id="Jld-t3-4P9"/>
+                                                        <constraint firstAttribute="bottom" secondItem="GnI-e9-hvE" secondAttribute="bottom" constant="8" id="hVn-6I-Xno"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
