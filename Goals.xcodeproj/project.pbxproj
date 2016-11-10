@@ -64,10 +64,10 @@
 		9B153A651DCFC58B00F0BEEE /* Goals */ = {
 			isa = PBXGroup;
 			children = (
+				9B153A851DD3F88100F0BEEE /* Controller */,
+				9B153A841DD3F87E00F0BEEE /* View */,
+				9B153A831DD3F87700F0BEEE /* Controller */,
 				9B153A661DCFC58B00F0BEEE /* AppDelegate.swift */,
-				9B153A681DCFC58B00F0BEEE /* GoalsVC.swift */,
-				9B153A7D1DCFF93E00F0BEEE /* GoalCell.swift */,
-				9B153A7B1DCFC8B200F0BEEE /* CustomNavbar.swift */,
 				9B153A6A1DCFC58B00F0BEEE /* Main.storyboard */,
 				9B153A811DD3DDAF00F0BEEE /* GoalView.swift */,
 				9B153A7F1DD015EF00F0BEEE /* AddVC.swift */,
@@ -77,6 +77,30 @@
 				9B153A6D1DCFC58B00F0BEEE /* Goals.xcdatamodeld */,
 			);
 			path = Goals;
+			sourceTree = "<group>";
+		};
+		9B153A831DD3F87700F0BEEE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9B153A681DCFC58B00F0BEEE /* GoalsVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		9B153A841DD3F87E00F0BEEE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9B153A7D1DCFF93E00F0BEEE /* GoalCell.swift */,
+				9B153A7B1DCFC8B200F0BEEE /* CustomNavbar.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		9B153A851DD3F88100F0BEEE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
