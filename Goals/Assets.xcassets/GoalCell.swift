@@ -10,6 +10,7 @@ import UIKit
 
 class GoalCell: UITableViewCell {
 
+    @IBOutlet weak var view: GoalView!
     @IBOutlet weak var nameLbl: UILabel!
     @IBOutlet weak var dateLbl: UILabel!
     

@@ -76,6 +76,7 @@
                                         <connections>
                                             <outlet property="dateLbl" destination="DCN-X6-p7Q" id="gOC-SR-ibF"/>
                                             <outlet property="nameLbl" destination="sOr-uU-ukk" id="ci8-my-qTC"/>
+                                            <outlet property="view" destination="PRK-XI-2iD" id="I95-0m-viC"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
