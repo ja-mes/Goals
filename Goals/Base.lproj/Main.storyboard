@@ -29,7 +29,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="86" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iw4-Nm-kgk">
-                                <rect key="frame" x="0.0" y="118" width="375" height="549"/>
+                                <rect key="frame" x="0.0" y="94.5" width="375" height="572.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GoalCell" rowHeight="86" id="cMP-PT-c4q" customClass="GoalCell" customModule="Goals" customModuleProvider="target">
@@ -96,7 +96,7 @@
                         <constraints>
                             <constraint firstItem="iw4-Nm-kgk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1vn-zz-nSJ"/>
                             <constraint firstAttribute="trailing" secondItem="U3N-fP-UrL" secondAttribute="trailing" id="424-wt-6Qo"/>
-                            <constraint firstItem="iw4-Nm-kgk" firstAttribute="top" secondItem="lHG-AW-2aH" secondAttribute="bottom" constant="43.5" id="6mJ-s2-GLn"/>
+                            <constraint firstItem="iw4-Nm-kgk" firstAttribute="top" secondItem="lHG-AW-2aH" secondAttribute="bottom" constant="20" id="6mJ-s2-GLn"/>
                             <constraint firstItem="lHG-AW-2aH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9B9-2T-L2A"/>
                             <constraint firstItem="lHG-AW-2aH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Lin-zX-nY5"/>
                             <constraint firstAttribute="trailing" secondItem="iw4-Nm-kgk" secondAttribute="trailing" id="o2T-qb-52E"/>
