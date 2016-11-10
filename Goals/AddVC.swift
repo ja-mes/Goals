@@ -36,6 +36,10 @@ class AddVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSou
         return 20
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(indexPath.row)
+    }
+    
     @IBAction func backPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
