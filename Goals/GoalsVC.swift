@@ -109,6 +109,11 @@ class GoalsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSF
         let goal = controller.object(at: indexPath)
         cell.nameLbl.text = goal.name
         
+        if let color = goal.color {
+            cell.view.backgroundColor = UIColor(hexString: color)
+        }
+        
+        
         if let date = goal.date {
             let formatter = DateFormatter()
             formatter.dateStyle = .long
