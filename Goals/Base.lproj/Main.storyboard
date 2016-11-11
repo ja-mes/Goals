@@ -204,59 +204,59 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="22W-VT-iAz">
-                                <rect key="frame" x="16" y="495" width="180" height="20"/>
+                                <rect key="frame" x="16" y="495" width="205" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZDb-2p-PM7" customClass="CircleView" customModule="Goals" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZDb-2p-PM7" customClass="CircleButton" customModule="Goals" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
                                         <color key="backgroundColor" red="0.95686274510000002" green="0.26274509800000001" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="20" id="agw-aM-mTU"/>
-                                            <constraint firstAttribute="height" constant="20" id="bVY-UF-L3G"/>
+                                            <constraint firstAttribute="width" constant="25" id="agw-aM-mTU"/>
+                                            <constraint firstAttribute="height" constant="25" id="bVY-UF-L3G"/>
                                         </constraints>
                                         <connections>
                                             <action selector="colorPressed:" destination="MrB-al-WmQ" eventType="touchUpInside" id="FrD-32-mgo"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpF-im-zoe" customClass="CircleView" customModule="Goals" customModuleProvider="target">
-                                        <rect key="frame" x="40" y="0.0" width="20" height="20"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpF-im-zoe" customClass="CircleButton" customModule="Goals" customModuleProvider="target">
+                                        <rect key="frame" x="45" y="0.0" width="25" height="25"/>
                                         <color key="backgroundColor" red="0.95686274510000002" green="0.26274509800000001" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="20" id="9oJ-N1-o46"/>
-                                            <constraint firstAttribute="height" constant="20" id="vaz-eq-XVN"/>
+                                            <constraint firstAttribute="width" constant="25" id="9oJ-N1-o46"/>
+                                            <constraint firstAttribute="height" constant="25" id="vaz-eq-XVN"/>
                                         </constraints>
                                         <connections>
                                             <action selector="colorPressed:" destination="MrB-al-WmQ" eventType="touchUpInside" id="b5Y-J8-IDk"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XWj-Tl-tCv" customClass="CircleView" customModule="Goals" customModuleProvider="target">
-                                        <rect key="frame" x="80" y="0.0" width="20" height="20"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XWj-Tl-tCv" customClass="CircleButton" customModule="Goals" customModuleProvider="target">
+                                        <rect key="frame" x="90" y="0.0" width="25" height="25"/>
                                         <color key="backgroundColor" red="0.25882352939999997" green="0.25882352939999997" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="20" id="2rD-RM-o4J"/>
-                                            <constraint firstAttribute="width" constant="20" id="Q1b-Af-yWb"/>
+                                            <constraint firstAttribute="height" constant="25" id="2rD-RM-o4J"/>
+                                            <constraint firstAttribute="width" constant="25" id="Q1b-Af-yWb"/>
                                         </constraints>
                                         <connections>
                                             <action selector="colorPressed:" destination="MrB-al-WmQ" eventType="touchUpInside" id="tvK-8z-OyU"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j5K-cl-pe8" customClass="CircleView" customModule="Goals" customModuleProvider="target">
-                                        <rect key="frame" x="120" y="0.0" width="20" height="20"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j5K-cl-pe8" customClass="CircleButton" customModule="Goals" customModuleProvider="target">
+                                        <rect key="frame" x="135" y="0.0" width="25" height="25"/>
                                         <color key="backgroundColor" red="0.95686274510000002" green="0.26274509800000001" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="20" id="6cQ-wD-R2y"/>
-                                            <constraint firstAttribute="height" constant="20" id="SpD-j8-1cu"/>
+                                            <constraint firstAttribute="width" constant="25" id="6cQ-wD-R2y"/>
+                                            <constraint firstAttribute="height" constant="25" id="SpD-j8-1cu"/>
                                         </constraints>
                                         <connections>
                                             <action selector="colorPressed:" destination="MrB-al-WmQ" eventType="touchUpInside" id="phL-nM-ybc"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2y-Hd-ZBc" customClass="CircleView" customModule="Goals" customModuleProvider="target">
-                                        <rect key="frame" x="160" y="0.0" width="20" height="20"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2y-Hd-ZBc" customClass="CircleButton" customModule="Goals" customModuleProvider="target">
+                                        <rect key="frame" x="180" y="0.0" width="25" height="25"/>
                                         <color key="backgroundColor" red="0.95686274510000002" green="0.26274509800000001" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="20" id="jU8-2F-lMv"/>
-                                            <constraint firstAttribute="width" constant="20" id="wLW-kc-IXr"/>
+                                            <constraint firstAttribute="height" constant="25" id="jU8-2F-lMv"/>
+                                            <constraint firstAttribute="width" constant="25" id="wLW-kc-IXr"/>
                                         </constraints>
                                         <connections>
                                             <action selector="colorPressed:" destination="MrB-al-WmQ" eventType="touchUpInside" id="L5W-Lz-YYf"/>

@@ -14,6 +14,8 @@ class AddVC: UIViewController {
     @IBOutlet weak var datePicker: UIDatePicker!
     
     var color: String?
+    var selectedColor: CircleButton?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,9 +43,17 @@ class AddVC: UIViewController {
         }
     }
     
-    @IBAction func colorPressed(_ sender: UIButton) {
+    @IBAction func colorPressed(_ sender: CircleButton) {
         if let color = sender.backgroundColor {
             self.color = color.toHexString()
+            
+            sender.selectedColor = true
+            
+            if let currentColor = selectedColor {
+                currentColor.selectedColor = false
+            }
+            
+            selectedColor = sender
         }
     }
     
