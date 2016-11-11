@@ -44,8 +44,6 @@ class AddVC: UIViewController {
     @IBAction func colorPressed(_ sender: UIButton) {
         if let color = sender.backgroundColor {
             self.color = color.toHexString()
-            
-            print(color.toHexString())
         }
     }
     
