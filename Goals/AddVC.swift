@@ -37,6 +37,7 @@ class AddVC: UIViewController, UITextFieldDelegate {
                 if let color = button.backgroundColor?.toHexString(), let selectedColor = goal.color {
                     if color == selectedColor {
                         button.selectedColor = true
+                        self.color = color
                     }
                 }
             }
