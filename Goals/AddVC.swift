@@ -21,9 +21,16 @@ class AddVC: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(goal)
-        
         name.delegate = self
+        
+        if let goal = goal {
+            name.text = goal.name
+            
+            if let date = goal.date as? Date {
+                datePicker.setDate(date, animated: true)
+            }
+            
+        }
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
