@@ -78,10 +78,17 @@ class AddVC: UIViewController, UITextFieldDelegate {
     
     func configure() -> Goal? {
         if let text = name.text, text.isEmpty == false {
-            let goal = Goal(context: context)
-            goal.name = text
+            let item: Goal!
             
-            return goal
+            if let goal = goal {
+                item = goal
+            } else {
+                item = Goal(context: context)
+            }
+            
+            item.name = text
+            
+            return item
         }
         
         return nil
