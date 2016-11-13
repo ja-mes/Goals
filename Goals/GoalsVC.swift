@@ -24,6 +24,9 @@ class GoalsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSF
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    }
+    
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "GoalCell") as? GoalCell {
@@ -52,8 +55,9 @@ class GoalsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSF
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("did select")
+        
     }
+
     
     // MARK: fetched results controller
     func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
