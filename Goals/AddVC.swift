@@ -20,7 +20,7 @@ class AddVC: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.hideKeyboardWhenTappedAround()
+        self.hideKeyboardWhenTappedAround()
         
         name.delegate = self
         
