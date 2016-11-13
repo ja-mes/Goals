@@ -25,6 +25,13 @@ class GoalsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSF
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "AddVC" {
+            if let destination = segue.destination as? AddVC {
+                if let goal = sender as? Goal {
+                    destination.goal = goal
+                }
+            }
+        }
     }
     
 
@@ -55,7 +62,7 @@ class GoalsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSF
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        performSegue(withIdentifier: "AddVC", sender: controller.object(at: indexPath))
     }
     
     // MARK: ibactions

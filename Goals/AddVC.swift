@@ -13,12 +13,15 @@ class AddVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var name: CustomField!
     @IBOutlet weak var datePicker: UIDatePicker!
     
+    var goal: Goal?
     var color: String?
     var selectedColor: CircleButton?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print(goal)
         
         name.delegate = self
     }
