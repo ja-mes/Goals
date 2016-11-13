@@ -16,11 +16,12 @@ class AddVC: UIViewController, UITextFieldDelegate {
     var goal: Goal?
     var color: String?
     var selectedColor: CircleButton?
+    @IBOutlet var colorButtons: [UIButton]?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.hideKeyboardWhenTappedAround()
+        self.hideKeyboardWhenTappedAround()
         
         name.delegate = self
         
