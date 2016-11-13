@@ -28,6 +28,7 @@ class GoalsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSF
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "GoalCell") as? GoalCell {
             configureCell(cell: cell, indexPath: indexPath)
+            cell.selectionStyle = .none
             return cell
         }
         
@@ -48,6 +49,10 @@ class GoalsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSF
         }
         
         return 0
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("did select")
     }
     
     // MARK: fetched results controller
