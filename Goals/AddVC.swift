@@ -15,7 +15,7 @@ class AddVC: UIViewController, UITextFieldDelegate {
     
     var goal: Goal?
     var color: String?
-    var selectedColor: CircleButton?
+    var oldSelectedColor: CircleButton?
     @IBOutlet var colorButtons: [CircleButton]!
     
     
@@ -78,11 +78,11 @@ class AddVC: UIViewController, UITextFieldDelegate {
             
             sender.selectedColor = true
             
-            if let currentColor = selectedColor {
+            if let currentColor = oldSelectedColor {
                 currentColor.selectedColor = false
             }
             
-            selectedColor = sender
+            oldSelectedColor = sender
         }
     }
     
