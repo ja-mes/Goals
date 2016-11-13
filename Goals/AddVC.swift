@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AddVC: UIViewController {
+class AddVC: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var name: CustomField!
     @IBOutlet weak var datePicker: UIDatePicker!
@@ -19,7 +19,15 @@ class AddVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        name.delegate = self
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
     
     @IBAction func backPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
