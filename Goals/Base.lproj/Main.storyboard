@@ -92,7 +92,7 @@
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
                                 <state key="normal" image="plus"/>
                                 <connections>
-                                    <segue destination="MrB-al-WmQ" kind="show" id="SKP-EM-ySu"/>
+                                    <action selector="addGoalPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vWW-BC-2c3"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -114,6 +114,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="iw4-Nm-kgk" id="MM9-7d-Bax"/>
+                        <segue destination="MrB-al-WmQ" kind="show" identifier="AddVC" id="fEz-BV-QqB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

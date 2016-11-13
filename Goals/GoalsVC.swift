@@ -57,6 +57,12 @@ class GoalsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSF
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
     }
+    
+    // MARK: ibactions
+    @IBAction func addGoalPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "AddVC", sender: nil)
+    }
+    
 
     
     // MARK: fetched results controller
