@@ -16,7 +16,7 @@ class AddVC: UIViewController, UITextFieldDelegate {
     var goal: Goal?
     var color: String?
     var selectedColor: CircleButton?
-    @IBOutlet var colorButtons: [UIButton]?
+    @IBOutlet var colorButtons: [CircleButton]!
     
     
     override func viewDidLoad() {
@@ -30,6 +30,15 @@ class AddVC: UIViewController, UITextFieldDelegate {
             
             if let date = goal.date as? Date {
                 datePicker.setDate(date, animated: true)
+            }
+            
+            
+            for button in colorButtons {
+                if let color = button.backgroundColor?.toHexString(), let selectedColor = goal.color {
+                    if color == selectedColor {
+                        button.selectedColor = true
+                    }
+                }
             }
             
         }
