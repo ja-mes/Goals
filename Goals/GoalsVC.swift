@@ -127,6 +127,7 @@ class GoalsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSF
         }
     }
     
+    
     func configureCell(cell: GoalCell, indexPath: IndexPath) {
         let goal = controller.object(at: indexPath)
         cell.nameLbl.text = goal.name

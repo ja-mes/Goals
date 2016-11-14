@@ -18,7 +18,6 @@ class AddVC: UIViewController, UITextFieldDelegate {
     var oldSelectedColor: CircleButton?
     @IBOutlet var colorButtons: [CircleButton]!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
