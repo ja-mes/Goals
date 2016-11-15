@@ -80,12 +80,18 @@ class GoalsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSF
     @IBAction func segmentChanged(_ sender: RoundedButton) {
         if sender == doneButton {
             if selectedSegmentIndex != 1 {
+                doneButton.backgroundColor = UIColor(hexString: "#D6D6D6")
+                currentButton.backgroundColor = UIColor.white
+                
                 selectedSegmentIndex = 1
                 fetchGoals()
                 tableView.reloadData()
             }
         } else if sender == currentButton {
             if selectedSegmentIndex != 0 {
+                doneButton.backgroundColor = UIColor.white
+                currentButton.backgroundColor = UIColor(hexString: "#D6D6D6")
+                
                 selectedSegmentIndex = 0
                 fetchGoals()
                 tableView.reloadData()
