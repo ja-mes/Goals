@@ -184,7 +184,9 @@ class GoalsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSF
             let touchPoint = longPressGestureRecognizer.location(in: self.tableView)
             
             if let indexPath = tableView.indexPathForRow(at: touchPoint) {
-                
+                let goal = controller.object(at: indexPath)
+                goal.done = !goal.done
+                appDel.saveContext()
             }
         }
     }
