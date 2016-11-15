@@ -138,6 +138,12 @@ class GoalsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSF
         let fetchRequest: NSFetchRequest<Goal> = Goal.fetchRequest()
         fetchRequest.sortDescriptors = [NSSortDescriptor(key: "date", ascending: true)]
         
+        if selectedSegmentIndex == 0 {
+            
+        } else if selectedSegmentIndex == 1 {
+            
+        }
+        
         let controller = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
         self.controller = controller
         
