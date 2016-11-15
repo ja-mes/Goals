@@ -41,6 +41,8 @@ class AddVC: UIViewController, UITextFieldDelegate {
                 }
             }
             
+        } else {
+            colorPressed(colorButtons[0])
         }
     }
     
