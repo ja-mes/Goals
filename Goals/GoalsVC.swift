@@ -15,6 +15,7 @@ class GoalsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSF
     @IBOutlet weak var doneButton: RoundedButton!
     
     var controller: NSFetchedResultsController<Goal>!
+    var selectedSegmentIndex = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -78,9 +79,17 @@ class GoalsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSF
     
     @IBAction func segmentChanged(_ sender: RoundedButton) {
         if sender == doneButton {
-            
+            if selectedSegmentIndex != 1 {
+                selectedSegmentIndex = 1
+                fetchGoals()
+                tableView.reloadData()
+            }
         } else if sender == currentButton {
-            
+            if selectedSegmentIndex != 0 {
+                selectedSegmentIndex = 0
+                fetchGoals()
+                tableView.reloadData()
+            }
         }
     }
     
