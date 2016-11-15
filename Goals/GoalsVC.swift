@@ -170,7 +170,7 @@ class GoalsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSF
     
     func configureCell(cell: GoalCell, indexPath: IndexPath) {
         let goal = controller.object(at: indexPath)
-        cell.nameLbl.text = goal.name
+        cell.nameLbl.text = goal.name?.uppercased()
         
         if let color = goal.color {
             cell.view.backgroundColor = UIColor(hexString: color)

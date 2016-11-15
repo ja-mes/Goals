@@ -9,7 +9,6 @@
 import UIKit
 
 class AddVC: UIViewController, UITextFieldDelegate {
-
     @IBOutlet weak var name: CustomField!
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet var colorButtons: [CircleButton]!

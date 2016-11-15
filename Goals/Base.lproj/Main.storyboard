@@ -42,12 +42,12 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PRK-XI-2iD" customClass="GoalView" customModule="Goals" customModuleProvider="target">
                                                     <rect key="frame" x="16" y="8" width="343" height="63"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="GnI-e9-hvE">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="GnI-e9-hvE">
                                                             <rect key="frame" x="15" y="8" width="320" height="47"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="RUN 10 MILES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOr-uU-ukk">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="25.5"/>
-                                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="26.5"/>
+                                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                                                     <color key="textColor" red="0.99990183115005493" green="1" blue="0.99987989664077759" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -251,9 +251,9 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="22W-VT-iAz">
-                                                <rect key="frame" x="16" y="494.5" width="250" height="25"/>
+                                                <rect key="frame" x="16" y="494.5" width="340" height="25"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZDb-2p-PM7" customClass="CircleButton" customModule="Goals" customModuleProvider="target">
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZDb-2p-PM7" customClass="CircleButton" customModule="Goals" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
                                                         <color key="backgroundColor" red="0.95686274510000002" green="0.26274509800000001" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
@@ -319,6 +319,28 @@
                                                             <action selector="colorPressed:" destination="MrB-al-WmQ" eventType="touchUpInside" id="hYk-GG-kM3"/>
                                                         </connections>
                                                     </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V9H-KJ-3ny" customClass="CircleButton" customModule="Goals" customModuleProvider="target">
+                                                        <rect key="frame" x="270" y="0.0" width="25" height="25"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.58823529411764708" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="25" id="30s-q1-cDS"/>
+                                                            <constraint firstAttribute="width" constant="25" id="TNH-M4-pfv"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="colorPressed:" destination="MrB-al-WmQ" eventType="touchUpInside" id="Hza-hm-CiN"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFg-xd-bX0" customClass="CircleButton" customModule="Goals" customModuleProvider="target">
+                                                        <rect key="frame" x="315" y="0.0" width="25" height="25"/>
+                                                        <color key="backgroundColor" red="0.50980392156862742" green="0.46666666666666667" blue="0.090196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="25" id="Cwq-tf-QgP"/>
+                                                            <constraint firstAttribute="width" constant="25" id="aOd-bZ-NfY"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="colorPressed:" destination="MrB-al-WmQ" eventType="touchUpInside" id="YPI-ZI-Gnj"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
@@ -374,6 +396,8 @@
                         <outletCollection property="colorButtons" destination="o2y-Hd-ZBc" collectionClass="NSMutableArray" id="VcX-sb-YzR"/>
                         <outletCollection property="colorButtons" destination="fhn-ec-PaM" collectionClass="NSMutableArray" id="1uX-Ia-GH3"/>
                         <outletCollection property="colorButtons" destination="HdM-UC-g8n" collectionClass="NSMutableArray" id="tyy-ix-flh"/>
+                        <outletCollection property="colorButtons" destination="V9H-KJ-3ny" collectionClass="NSMutableArray" id="iEL-Bg-qNa"/>
+                        <outletCollection property="colorButtons" destination="fFg-xd-bX0" collectionClass="NSMutableArray" id="sqE-oG-oF0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lww-hM-a0g" userLabel="First Responder" sceneMemberID="firstResponder"/>
