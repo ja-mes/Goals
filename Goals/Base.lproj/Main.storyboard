@@ -109,6 +109,9 @@
                                         <state key="normal" title="CURRENT">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="segmentChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RGR-gJ-wHi"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKa-Fn-WfA" customClass="RoundedButton" customModule="Goals" customModuleProvider="target">
                                         <rect key="frame" x="76" y="0.0" width="66" height="26"/>
@@ -119,6 +122,9 @@
                                         <state key="normal" title="DONE">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="segmentChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dGJ-eQ-3Xc"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -142,6 +148,8 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Fqr-Ic-9ST"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="currentButton" destination="gfB-Gv-Xkt" id="izq-sC-1lY"/>
+                        <outlet property="doneButton" destination="UKa-Fn-WfA" id="Kxj-U7-uBe"/>
                         <outlet property="tableView" destination="iw4-Nm-kgk" id="MM9-7d-Bax"/>
                         <segue destination="MrB-al-WmQ" kind="show" identifier="AddVC" id="fEz-BV-QqB"/>
                     </connections>

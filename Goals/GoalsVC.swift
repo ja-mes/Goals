@@ -11,6 +11,8 @@ import CoreData
 
 class GoalsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSFetchedResultsControllerDelegate {
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var currentButton: RoundedButton!
+    @IBOutlet weak var doneButton: RoundedButton!
     
     var controller: NSFetchedResultsController<Goal>!
 
@@ -71,6 +73,15 @@ class GoalsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSF
     // MARK: ibactions
     @IBAction func addGoalPressed(_ sender: UIButton) {
         performSegue(withIdentifier: "AddVC", sender: nil)
+    }
+    
+    
+    @IBAction func segmentChanged(_ sender: RoundedButton) {
+        if sender == doneButton {
+            
+        } else if sender == currentButton {
+            
+        }
     }
     
 
