@@ -138,11 +138,16 @@ class GoalsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSF
         let fetchRequest: NSFetchRequest<Goal> = Goal.fetchRequest()
         fetchRequest.sortDescriptors = [NSSortDescriptor(key: "date", ascending: true)]
         
+        
+        var shouldShowDone = true
+        
         if selectedSegmentIndex == 0 {
-            
-        } else if selectedSegmentIndex == 1 {
-            
+            shouldShowDone = false
         }
+        
+        fetchRequest.predicate = NSPredicate(format: "done == %@", shouldShowDone as CVarArg)
+        
+        
         
         let controller = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
         self.controller = controller
