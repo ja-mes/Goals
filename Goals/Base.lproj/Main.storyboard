@@ -251,7 +251,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="22W-VT-iAz">
-                                                <rect key="frame" x="16" y="494.5" width="250" height="25"/>
+                                                <rect key="frame" x="16" y="498.5" width="250" height="25"/>
                                                 <subviews>
                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZDb-2p-PM7" customClass="CircleButton" customModule="Goals" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
@@ -328,7 +328,7 @@
                                             <constraint firstAttribute="trailingMargin" secondItem="uA5-k7-4dS" secondAttribute="trailing" constant="8" id="3QM-EA-0Zg"/>
                                             <constraint firstItem="P0G-fh-ztJ" firstAttribute="top" secondItem="sZr-If-iaI" secondAttribute="bottom" constant="47" id="4m6-rH-fga"/>
                                             <constraint firstItem="jDJ-s5-94d" firstAttribute="top" secondItem="P0G-fh-ztJ" secondAttribute="bottom" constant="15" id="6GU-44-tsa"/>
-                                            <constraint firstItem="22W-VT-iAz" firstAttribute="top" secondItem="J6S-DR-juc" secondAttribute="bottom" constant="12" id="8R9-RE-cfs"/>
+                                            <constraint firstItem="22W-VT-iAz" firstAttribute="top" secondItem="J6S-DR-juc" secondAttribute="bottom" constant="16" id="8R9-RE-cfs"/>
                                             <constraint firstAttribute="height" constant="622" id="9l7-m3-M64"/>
                                             <constraint firstItem="22W-VT-iAz" firstAttribute="leading" secondItem="NhG-FS-E8Q" secondAttribute="leading" constant="16" id="A4t-kK-aUJ"/>
                                             <constraint firstItem="TXs-PV-gJu" firstAttribute="centerX" secondItem="NhG-FS-E8Q" secondAttribute="centerX" id="Eoh-Ne-EGU"/>
