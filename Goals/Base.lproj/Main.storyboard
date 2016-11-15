@@ -286,15 +286,15 @@
                                                             <action selector="colorPressed:" destination="MrB-al-WmQ" eventType="touchUpInside" id="tvK-8z-OyU"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j5K-cl-pe8" customClass="CircleButton" customModule="Goals" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HdM-UC-g8n" customClass="CircleButton" customModule="Goals" customModuleProvider="target">
                                                         <rect key="frame" x="135" y="0.0" width="25" height="25"/>
-                                                        <color key="backgroundColor" red="1" green="0.59607843137254901" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="backgroundColor" red="0.9137254901960784" green="0.11764705882352941" blue="0.38823529411764707" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="25" id="6cQ-wD-R2y"/>
-                                                            <constraint firstAttribute="height" constant="25" id="SpD-j8-1cu"/>
+                                                            <constraint firstAttribute="width" constant="25" id="mqL-OI-iwP"/>
+                                                            <constraint firstAttribute="height" constant="25" id="wGf-SW-4pJ"/>
                                                         </constraints>
                                                         <connections>
-                                                            <action selector="colorPressed:" destination="MrB-al-WmQ" eventType="touchUpInside" id="phL-nM-ybc"/>
+                                                            <action selector="colorPressed:" destination="MrB-al-WmQ" eventType="touchUpInside" id="TyE-oV-1Et"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2y-Hd-ZBc" customClass="CircleButton" customModule="Goals" customModuleProvider="target">
@@ -371,9 +371,9 @@
                         <outletCollection property="colorButtons" destination="ZDb-2p-PM7" collectionClass="NSMutableArray" id="G3b-W4-wVe"/>
                         <outletCollection property="colorButtons" destination="vpF-im-zoe" collectionClass="NSMutableArray" id="cNg-4z-opp"/>
                         <outletCollection property="colorButtons" destination="XWj-Tl-tCv" collectionClass="NSMutableArray" id="3st-do-Mhq"/>
-                        <outletCollection property="colorButtons" destination="j5K-cl-pe8" collectionClass="NSMutableArray" id="bzL-P8-hLc"/>
                         <outletCollection property="colorButtons" destination="o2y-Hd-ZBc" collectionClass="NSMutableArray" id="VcX-sb-YzR"/>
                         <outletCollection property="colorButtons" destination="fhn-ec-PaM" collectionClass="NSMutableArray" id="1uX-Ia-GH3"/>
+                        <outletCollection property="colorButtons" destination="HdM-UC-g8n" collectionClass="NSMutableArray" id="tyy-ix-flh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lww-hM-a0g" userLabel="First Responder" sceneMemberID="firstResponder"/>
