@@ -22,7 +22,7 @@ class GoalsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSF
         
         tableView.delegate = self
         tableView.dataSource = self
-        
+                
         fetchGoals()
         
         let longPressRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(longPress(longPressGestureRecognizer:)))

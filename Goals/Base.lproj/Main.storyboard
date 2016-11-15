@@ -321,11 +321,12 @@
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V9H-KJ-3ny" customClass="CircleButton" customModule="Goals" customModuleProvider="target">
                                                         <rect key="frame" x="270" y="0.0" width="25" height="25"/>
-                                                        <color key="backgroundColor" red="0.0" green="0.58823529411764708" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="backgroundColor" red="1" green="0.43529411764705883" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="25" id="30s-q1-cDS"/>
                                                             <constraint firstAttribute="width" constant="25" id="TNH-M4-pfv"/>
                                                         </constraints>
+                                                        <color key="tintColor" red="1" green="0.43529411764705883" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <connections>
                                                             <action selector="colorPressed:" destination="MrB-al-WmQ" eventType="touchUpInside" id="Hza-hm-CiN"/>
                                                         </connections>

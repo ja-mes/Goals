@@ -75,6 +75,7 @@ class AddVC: UIViewController, UITextFieldDelegate {
     
     @IBAction func colorPressed(_ sender: CircleButton) {
         if let color = sender.backgroundColor {
+            
             self.color = color.toHexString()
             
             sender.selectedColor = true
