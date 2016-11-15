@@ -22,6 +22,9 @@ class GoalsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSF
         
         fetchGoals()
         
+        let longPressRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(longPress(longPressGestureRecognizer:)))
+        self.view.addGestureRecognizer(longPressRecognizer)
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -141,6 +144,17 @@ class GoalsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSF
             let formatter = DateFormatter()
             formatter.dateStyle = .long
             cell.dateLbl.text = formatter.string(from: date as Date)
+        }
+    }
+    
+    func longPress(longPressGestureRecognizer: UILongPressGestureRecognizer) {
+        
+        if longPressGestureRecognizer.state == UIGestureRecognizerState.began {
+            let touchPoint = longPressGestureRecognizer.location(in: self.tableView)
+            
+            if let indexPath = tableView.indexPathForRow(at: touchPoint) {
+                
+            }
         }
     }
 
