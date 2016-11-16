@@ -10,11 +10,13 @@ import UIKit
 
 class AddVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var name: CustomField!
-    @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet var colorButtons: [CircleButton]!
+    @IBOutlet weak var dateField: CustomField!
+    @IBOutlet weak var titleLabel: UILabel!
     
     var goal: Goal?
     var color: String?
+    var datePicker: UIDatePicker!
     var oldSelectedColor: CircleButton?
     
     override func viewDidLoad() {
@@ -23,7 +25,15 @@ class AddVC: UIViewController, UITextFieldDelegate {
         
         name.delegate = self
         
+        // datepicker field
+        datePicker = UIDatePicker()
+        datePicker.datePickerMode = .date
+        dateField.inputView = datePicker
+        dateField.tintColor = UIColor.clear
+        datePicker.addTarget(self, action: #selector(handleDatePicker(sender:)), for: .valueChanged)
+        
         if let goal = goal {
+            titleLabel.text = "EDIT"
             name.text = goal.name
             
             if let date = goal.date as? Date {
@@ -54,6 +64,14 @@ class AddVC: UIViewController, UITextFieldDelegate {
         dismiss(animated: true, completion: nil)
     }
 
+    @IBAction func dateEditingBegan(_ sender: CustomField) {
+        dateField.textColor = #colorLiteral(red: 1, green: 0.1558659971, blue: 0.145486623, alpha: 1)
+    }
+    
+    @IBAction func dateEditingEnded(_ sender: CustomField) {
+        dateField.textColor = .black
+    }
+    
     @IBAction func savePressed(_ sender: UIButton) {
         if let goal = configure() {
             goal.date = datePicker.date as NSDate?
@@ -113,4 +131,27 @@ class AddVC: UIViewController, UITextFieldDelegate {
         
         self.present(alertController, animated: true, completion: nil)
     }
+    
+    func handleDatePicker(sender: UIDatePicker) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .long
+        dateField.text = dateFormatter.string(from: sender.date).uppercased()
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

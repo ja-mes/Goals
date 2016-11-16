@@ -8,9 +8,10 @@
 
 import UIKit
 
-class RoundedButton: UIButton {
-
-    override func awakeFromNib() {
-        layer.cornerRadius = 12
+@IBDesignable class RoundedButton: UIButton {
+    @IBInspectable var cornerRadius: CGFloat = 0 {
+        didSet {
+            layer.cornerRadius = cornerRadius
+        }
     }
 }
