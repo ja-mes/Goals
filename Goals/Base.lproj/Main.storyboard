@@ -322,35 +322,15 @@
                                                     </button>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bK2-H1-3rb">
-                                                <rect key="frame" x="16" y="261" width="208" height="26"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="SEPTEMBER 11, 2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPG-UJ-b4B">
-                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="26"/>
-                                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="12"/>
-                                                        <color key="textColor" red="0.36074987053871155" green="0.36080634593963623" blue="0.36073750257492065" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7T-fy-H0t" customClass="RoundedButton" customModule="Goals" customModuleProvider="target">
-                                                        <rect key="frame" x="140" y="0.0" width="68" height="26"/>
-                                                        <color key="backgroundColor" red="0.83921568627450982" green="0.83921568627450982" blue="0.83921568627450982" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="11"/>
-                                                        <inset key="contentEdgeInsets" minX="10" minY="5" maxX="10" maxY="5"/>
-                                                        <state key="normal" title="CHANGE">
-                                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                        </state>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="4"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
-                                                        <connections>
-                                                            <segue destination="e5N-Ud-eNr" kind="show" id="v9w-6Y-7CF"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="AUGUST 31, 2017" placeholder="Enter goal name" textAlignment="natural" minimumFontSize="17" background="textField" translatesAutoresizingMaskIntoConstraints="NO" id="YC1-WM-Jkm" customClass="CustomField" customModule="Goals" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="268" width="343" height="41"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="41" id="zsb-B3-ZSN"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -362,14 +342,17 @@
                                             <constraint firstItem="22W-VT-iAz" firstAttribute="leading" secondItem="NhG-FS-E8Q" secondAttribute="leading" constant="16" id="A4t-kK-aUJ"/>
                                             <constraint firstItem="TXs-PV-gJu" firstAttribute="centerX" secondItem="NhG-FS-E8Q" secondAttribute="centerX" id="Eoh-Ne-EGU"/>
                                             <constraint firstItem="sZr-If-iaI" firstAttribute="top" secondItem="UHG-VI-2DE" secondAttribute="bottom" constant="24" id="JCC-4R-jnM"/>
+                                            <constraint firstItem="YC1-WM-Jkm" firstAttribute="leading" secondItem="NhG-FS-E8Q" secondAttribute="leading" constant="16" id="JTi-TT-df2"/>
                                             <constraint firstItem="TXs-PV-gJu" firstAttribute="leading" secondItem="UHG-VI-2DE" secondAttribute="trailing" constant="8" id="WOQ-3r-Fm0"/>
                                             <constraint firstItem="uA5-k7-4dS" firstAttribute="top" secondItem="NhG-FS-E8Q" secondAttribute="top" constant="30" id="aAj-ls-7OX"/>
                                             <constraint firstItem="P0G-fh-ztJ" firstAttribute="leading" secondItem="NhG-FS-E8Q" secondAttribute="leadingMargin" constant="8" id="cV2-Zo-ZCM"/>
                                             <constraint firstItem="sZr-If-iaI" firstAttribute="leading" secondItem="NhG-FS-E8Q" secondAttribute="leadingMargin" constant="8" id="dZY-ze-9KZ"/>
                                             <constraint firstItem="TXs-PV-gJu" firstAttribute="top" secondItem="NhG-FS-E8Q" secondAttribute="top" constant="40" id="fgU-vq-b0v"/>
                                             <constraint firstItem="UHG-VI-2DE" firstAttribute="top" secondItem="NhG-FS-E8Q" secondAttribute="top" constant="25" id="lds-XV-nHA"/>
+                                            <constraint firstItem="YC1-WM-Jkm" firstAttribute="top" secondItem="P0G-fh-ztJ" secondAttribute="bottom" constant="15" id="meD-ue-Pzu"/>
                                             <constraint firstItem="uA5-k7-4dS" firstAttribute="leading" secondItem="TXs-PV-gJu" secondAttribute="trailing" constant="8" id="nv7-yN-ODO"/>
                                             <constraint firstItem="J6S-DR-juc" firstAttribute="leading" secondItem="NhG-FS-E8Q" secondAttribute="leadingMargin" constant="8" id="pUe-lc-zSu"/>
+                                            <constraint firstAttribute="trailing" secondItem="YC1-WM-Jkm" secondAttribute="trailing" constant="16" id="qW6-zo-EfF"/>
                                             <constraint firstItem="UHG-VI-2DE" firstAttribute="leading" secondItem="NhG-FS-E8Q" secondAttribute="leading" id="qv6-8h-wp2"/>
                                         </constraints>
                                     </view>
