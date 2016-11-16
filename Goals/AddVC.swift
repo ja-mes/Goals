@@ -100,8 +100,17 @@ class AddVC: UIViewController, UITextFieldDelegate {
     
     @IBAction func deletePressed(_ sender: RoundedButton) {
         if let goal = goal {
-            context.delete(goal)
-            dismiss(animated: true, completion: nil)
+            let deleteAlert = UIAlertController(title: "Are you sure?", message: "This goal will be permanently deleted", preferredStyle: UIAlertControllerStyle.alert)
+            
+            deleteAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
+                context.delete(goal)
+                self.dismiss(animated: true, completion: nil)
+            }))
+            
+            deleteAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action: UIAlertAction!) in
+            }))
+            
+            present(deleteAlert, animated: true, completion: nil)
         }
     }
     
