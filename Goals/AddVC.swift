@@ -10,11 +10,12 @@ import UIKit
 
 class AddVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var name: CustomField!
-    @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet var colorButtons: [CircleButton]!
+    @IBOutlet weak var dateField: CustomField!
     
     var goal: Goal?
     var color: String?
+    var datePicker: UIDatePicker!
     var oldSelectedColor: CircleButton?
     
     override func viewDidLoad() {
@@ -22,6 +23,12 @@ class AddVC: UIViewController, UITextFieldDelegate {
         self.hideKeyboardWhenTappedAround()
         
         name.delegate = self
+        
+        // datepicker field
+        datePicker = UIDatePicker()
+        datePicker.datePickerMode = .date
+        dateField.inputView = datePicker
+        dateField.tintColor = UIColor.clear
         
         if let goal = goal {
             name.text = goal.name

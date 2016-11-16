@@ -389,6 +389,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="dateField" destination="YC1-WM-Jkm" id="rPS-we-Spr"/>
                         <outlet property="name" destination="Mha-26-Ikh" id="ool-3h-uNa"/>
                         <outletCollection property="colorButtons" destination="ZDb-2p-PM7" collectionClass="NSMutableArray" id="G3b-W4-wVe"/>
                         <outletCollection property="colorButtons" destination="vpF-im-zoe" collectionClass="NSMutableArray" id="cNg-4z-opp"/>
