@@ -98,6 +98,13 @@ class AddVC: UIViewController, UITextFieldDelegate {
         }
     }
     
+    @IBAction func deletePressed(_ sender: RoundedButton) {
+        if let goal = goal {
+            context.delete(goal)
+            dismiss(animated: true, completion: nil)
+        }
+    }
+    
     @IBAction func colorPressed(_ sender: CircleButton) {
         if let color = sender.backgroundColor {
             

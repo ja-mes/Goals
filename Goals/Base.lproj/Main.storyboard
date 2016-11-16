@@ -361,6 +361,26 @@
                                                     </button>
                                                 </subviews>
                                             </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fc-NL-8iq" customClass="RoundedButton" customModule="Goals" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="477.5" width="90" height="36"/>
+                                                <color key="backgroundColor" red="1" green="0.15586599707603455" blue="0.14548662304878235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="krk-Nr-Vmg"/>
+                                                    <constraint firstAttribute="width" constant="90" id="qyy-Ux-z0d"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                                <state key="normal" title="DELETE">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="deletePressed:" destination="MrB-al-WmQ" eventType="touchUpInside" id="508-Dt-Yuz"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -371,6 +391,7 @@
                                             <constraint firstAttribute="height" constant="622" id="9l7-m3-M64"/>
                                             <constraint firstItem="22W-VT-iAz" firstAttribute="leading" secondItem="NhG-FS-E8Q" secondAttribute="leading" constant="16" id="A4t-kK-aUJ"/>
                                             <constraint firstItem="TXs-PV-gJu" firstAttribute="centerX" secondItem="NhG-FS-E8Q" secondAttribute="centerX" id="Eoh-Ne-EGU"/>
+                                            <constraint firstItem="0fc-NL-8iq" firstAttribute="top" secondItem="22W-VT-iAz" secondAttribute="bottom" constant="60" id="HJV-Re-nAR"/>
                                             <constraint firstItem="sZr-If-iaI" firstAttribute="top" secondItem="UHG-VI-2DE" secondAttribute="bottom" constant="24" id="JCC-4R-jnM"/>
                                             <constraint firstItem="YC1-WM-Jkm" firstAttribute="leading" secondItem="NhG-FS-E8Q" secondAttribute="leading" constant="16" id="JTi-TT-df2"/>
                                             <constraint firstItem="TXs-PV-gJu" firstAttribute="leading" secondItem="UHG-VI-2DE" secondAttribute="trailing" constant="8" id="WOQ-3r-Fm0"/>
@@ -378,6 +399,7 @@
                                             <constraint firstItem="P0G-fh-ztJ" firstAttribute="leading" secondItem="NhG-FS-E8Q" secondAttribute="leadingMargin" constant="8" id="cV2-Zo-ZCM"/>
                                             <constraint firstItem="sZr-If-iaI" firstAttribute="leading" secondItem="NhG-FS-E8Q" secondAttribute="leadingMargin" constant="8" id="dZY-ze-9KZ"/>
                                             <constraint firstItem="TXs-PV-gJu" firstAttribute="top" secondItem="NhG-FS-E8Q" secondAttribute="top" constant="40" id="fgU-vq-b0v"/>
+                                            <constraint firstItem="0fc-NL-8iq" firstAttribute="leading" secondItem="NhG-FS-E8Q" secondAttribute="leading" constant="16" id="gAB-f5-DPc"/>
                                             <constraint firstItem="UHG-VI-2DE" firstAttribute="top" secondItem="NhG-FS-E8Q" secondAttribute="top" constant="25" id="lds-XV-nHA"/>
                                             <constraint firstItem="YC1-WM-Jkm" firstAttribute="top" secondItem="P0G-fh-ztJ" secondAttribute="bottom" constant="15" id="meD-ue-Pzu"/>
                                             <constraint firstItem="uA5-k7-4dS" firstAttribute="leading" secondItem="TXs-PV-gJu" secondAttribute="trailing" constant="8" id="nv7-yN-ODO"/>
