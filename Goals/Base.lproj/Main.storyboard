@@ -251,6 +251,9 @@
                                                                 <real key="value" value="15"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="nameChanged:" destination="MrB-al-WmQ" eventType="editingChanged" id="WkV-cX-z4A"/>
+                                                        </connections>
                                                     </textField>
                                                 </subviews>
                                                 <constraints>

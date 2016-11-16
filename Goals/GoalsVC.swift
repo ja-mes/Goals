@@ -140,6 +140,7 @@ class GoalsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSF
         }
     }
     
+    
     func fetchGoals() {
         let fetchRequest: NSFetchRequest<Goal> = Goal.fetchRequest()
         fetchRequest.sortDescriptors = [NSSortDescriptor(key: "date", ascending: true)]

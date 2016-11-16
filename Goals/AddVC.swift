@@ -74,6 +74,12 @@ class AddVC: UIViewController, UITextFieldDelegate {
         dateField.textColor = .black
     }
     
+    @IBAction func nameChanged(_ sender: CustomField) {
+        if let text = sender.text?.characters, text.count > 30 {
+            sender.text?.remove(at: text.index(before: text.endIndex))
+        }
+    }
+    
     @IBAction func savePressed(_ sender: UIButton) {
         if let goal = configure() {
             goal.date = datePicker.date as NSDate?
