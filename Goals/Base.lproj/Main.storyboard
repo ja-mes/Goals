@@ -235,25 +235,16 @@
                                                 <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="jDJ-s5-94d">
-                                                <rect key="frame" x="0.0" y="268" width="375" height="166"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="166" id="Mzc-o4-7RO"/>
-                                                </constraints>
-                                                <date key="date" timeIntervalSinceReferenceDate="500434651.620453">
-                                                    <!--2016-11-10 01:37:31 +0000-->
-                                                </date>
-                                            </datePicker>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COLOR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6S-DR-juc">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="COLOR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6S-DR-juc">
                                                 <rect key="frame" x="16" y="462" width="52.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
                                                 <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="22W-VT-iAz">
-                                                <rect key="frame" x="16" y="498.5" width="250" height="25"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="22W-VT-iAz">
+                                                <rect key="frame" x="16" y="499" width="250" height="25"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZDb-2p-PM7" customClass="CircleButton" customModule="Goals" customModuleProvider="target">
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZDb-2p-PM7" customClass="CircleButton" customModule="Goals" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
                                                         <color key="backgroundColor" red="0.95686274510000002" green="0.26274509800000001" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
@@ -264,7 +255,7 @@
                                                             <action selector="colorPressed:" destination="MrB-al-WmQ" eventType="touchUpInside" id="FrD-32-mgo"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpF-im-zoe" customClass="CircleButton" customModule="Goals" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpF-im-zoe" customClass="CircleButton" customModule="Goals" customModuleProvider="target">
                                                         <rect key="frame" x="45" y="0.0" width="25" height="25"/>
                                                         <color key="backgroundColor" red="0.61176470588235299" green="0.15294117647058825" blue="0.69019607843137254" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
@@ -275,7 +266,7 @@
                                                             <action selector="colorPressed:" destination="MrB-al-WmQ" eventType="touchUpInside" id="b5Y-J8-IDk"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XWj-Tl-tCv" customClass="CircleButton" customModule="Goals" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XWj-Tl-tCv" customClass="CircleButton" customModule="Goals" customModuleProvider="target">
                                                         <rect key="frame" x="90" y="0.0" width="25" height="25"/>
                                                         <color key="backgroundColor" red="0.12941176470588234" green="0.58823529411764708" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
@@ -286,7 +277,7 @@
                                                             <action selector="colorPressed:" destination="MrB-al-WmQ" eventType="touchUpInside" id="tvK-8z-OyU"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HdM-UC-g8n" customClass="CircleButton" customModule="Goals" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HdM-UC-g8n" customClass="CircleButton" customModule="Goals" customModuleProvider="target">
                                                         <rect key="frame" x="135" y="0.0" width="25" height="25"/>
                                                         <color key="backgroundColor" red="0.9137254901960784" green="0.11764705882352941" blue="0.38823529411764707" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
@@ -297,7 +288,7 @@
                                                             <action selector="colorPressed:" destination="MrB-al-WmQ" eventType="touchUpInside" id="TyE-oV-1Et"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2y-Hd-ZBc" customClass="CircleButton" customModule="Goals" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2y-Hd-ZBc" customClass="CircleButton" customModule="Goals" customModuleProvider="target">
                                                         <rect key="frame" x="180" y="0.0" width="25" height="25"/>
                                                         <color key="backgroundColor" red="0.47450980392156861" green="0.33333333333333331" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
@@ -308,7 +299,7 @@
                                                             <action selector="colorPressed:" destination="MrB-al-WmQ" eventType="touchUpInside" id="L5W-Lz-YYf"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhn-ec-PaM" customClass="CircleButton" customModule="Goals" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhn-ec-PaM" customClass="CircleButton" customModule="Goals" customModuleProvider="target">
                                                         <rect key="frame" x="225" y="0.0" width="25" height="25"/>
                                                         <color key="backgroundColor" red="0.29803921568627451" green="0.68627450980392157" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
@@ -321,20 +312,43 @@
                                                     </button>
                                                 </subviews>
                                             </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bK2-H1-3rb">
+                                                <rect key="frame" x="16" y="261" width="198" height="26"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="SEPTEMBER 11, 2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPG-UJ-b4B">
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="26"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="12"/>
+                                                        <color key="textColor" red="0.36074987053871155" green="0.36080634593963623" blue="0.36073750257492065" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7T-fy-H0t" customClass="RoundedButton" customModule="Goals" customModuleProvider="target">
+                                                        <rect key="frame" x="140" y="0.0" width="58" height="26"/>
+                                                        <color key="backgroundColor" red="0.83921568627450982" green="0.83921568627450982" blue="0.83921568627450982" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="11"/>
+                                                        <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                                        <state key="normal" title="CHANGE">
+                                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="trailingMargin" secondItem="sZr-If-iaI" secondAttribute="trailing" constant="8" id="2Yy-hc-pLP"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="uA5-k7-4dS" secondAttribute="trailing" constant="8" id="3QM-EA-0Zg"/>
                                             <constraint firstItem="P0G-fh-ztJ" firstAttribute="top" secondItem="sZr-If-iaI" secondAttribute="bottom" constant="47" id="4m6-rH-fga"/>
-                                            <constraint firstItem="jDJ-s5-94d" firstAttribute="top" secondItem="P0G-fh-ztJ" secondAttribute="bottom" constant="15" id="6GU-44-tsa"/>
                                             <constraint firstItem="22W-VT-iAz" firstAttribute="top" secondItem="J6S-DR-juc" secondAttribute="bottom" constant="16" id="8R9-RE-cfs"/>
                                             <constraint firstAttribute="height" constant="622" id="9l7-m3-M64"/>
                                             <constraint firstItem="22W-VT-iAz" firstAttribute="leading" secondItem="NhG-FS-E8Q" secondAttribute="leading" constant="16" id="A4t-kK-aUJ"/>
                                             <constraint firstItem="TXs-PV-gJu" firstAttribute="centerX" secondItem="NhG-FS-E8Q" secondAttribute="centerX" id="Eoh-Ne-EGU"/>
                                             <constraint firstItem="sZr-If-iaI" firstAttribute="top" secondItem="UHG-VI-2DE" secondAttribute="bottom" constant="24" id="JCC-4R-jnM"/>
-                                            <constraint firstItem="J6S-DR-juc" firstAttribute="top" secondItem="jDJ-s5-94d" secondAttribute="bottom" constant="28" id="NMK-cg-UIN"/>
-                                            <constraint firstItem="jDJ-s5-94d" firstAttribute="leading" secondItem="NhG-FS-E8Q" secondAttribute="leading" id="WGg-RU-OlM"/>
                                             <constraint firstItem="TXs-PV-gJu" firstAttribute="leading" secondItem="UHG-VI-2DE" secondAttribute="trailing" constant="8" id="WOQ-3r-Fm0"/>
                                             <constraint firstItem="uA5-k7-4dS" firstAttribute="top" secondItem="NhG-FS-E8Q" secondAttribute="top" constant="30" id="aAj-ls-7OX"/>
                                             <constraint firstItem="P0G-fh-ztJ" firstAttribute="leading" secondItem="NhG-FS-E8Q" secondAttribute="leadingMargin" constant="8" id="cV2-Zo-ZCM"/>
@@ -344,7 +358,6 @@
                                             <constraint firstItem="uA5-k7-4dS" firstAttribute="leading" secondItem="TXs-PV-gJu" secondAttribute="trailing" constant="8" id="nv7-yN-ODO"/>
                                             <constraint firstItem="J6S-DR-juc" firstAttribute="leading" secondItem="NhG-FS-E8Q" secondAttribute="leadingMargin" constant="8" id="pUe-lc-zSu"/>
                                             <constraint firstItem="UHG-VI-2DE" firstAttribute="leading" secondItem="NhG-FS-E8Q" secondAttribute="leading" id="qv6-8h-wp2"/>
-                                            <constraint firstAttribute="trailing" secondItem="jDJ-s5-94d" secondAttribute="trailing" id="zPI-0A-W3I"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -379,6 +392,47 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lww-hM-a0g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1949.5999999999999" y="138.98050974512745"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Qie-SO-v7b">
+            <objects>
+                <viewController id="e5N-Ud-eNr" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bJB-ms-RPq"/>
+                        <viewControllerLayoutGuide type="bottom" id="JIV-kX-ciS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vNF-gG-7yF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="jDJ-s5-94d">
+                                <rect key="frame" x="28" y="177" width="320" height="313"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="313" id="z3F-gE-AII"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="500434651.620453">
+                                    <!--2016-11-10 01:37:31 +0000-->
+                                </date>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SELECT DATE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nnc-Ad-BTE">
+                                <rect key="frame" x="108" y="60" width="159" height="35"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
+                                <color key="textColor" red="0.36065846680000002" green="0.36072427029999998" blue="0.36064982410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Nnc-Ad-BTE" firstAttribute="centerX" secondItem="vNF-gG-7yF" secondAttribute="centerX" id="Tgh-fB-iui"/>
+                            <constraint firstItem="Nnc-Ad-BTE" firstAttribute="top" secondItem="bJB-ms-RPq" secondAttribute="bottom" constant="40" id="WYW-QW-glF"/>
+                            <constraint firstItem="jDJ-s5-94d" firstAttribute="centerX" secondItem="vNF-gG-7yF" secondAttribute="centerX" id="gfa-Md-zng"/>
+                            <constraint firstItem="jDJ-s5-94d" firstAttribute="centerY" secondItem="vNF-gG-7yF" secondAttribute="centerY" id="nJM-dm-OMO"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S4q-xg-26c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2748" y="138.98050974512745"/>
         </scene>
     </scenes>
     <resources>
