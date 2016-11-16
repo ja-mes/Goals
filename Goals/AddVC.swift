@@ -125,7 +125,7 @@ class AddVC: UIViewController, UITextFieldDelegate {
     func handleDatePicker(sender: UIDatePicker) {
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .long
-        dateField.text = dateFormatter.string(from: sender.date)
+        dateField.text = dateFormatter.string(from: sender.date).uppercased()
     }
 }
 
