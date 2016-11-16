@@ -14,8 +14,4 @@ import UIKit
             layer.cornerRadius = cornerRadius
         }
     }
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
 }
