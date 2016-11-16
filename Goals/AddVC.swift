@@ -38,6 +38,7 @@ class AddVC: UIViewController, UITextFieldDelegate {
             
             if let date = goal.date as? Date {
                 datePicker.setDate(date, animated: true)
+                displayDate(date: date)
             }
             
             
@@ -51,6 +52,7 @@ class AddVC: UIViewController, UITextFieldDelegate {
             
         } else {
             colorPressed(colorButtons[0])
+            displayDate(date: Date())
         }
     }
     
@@ -133,9 +135,13 @@ class AddVC: UIViewController, UITextFieldDelegate {
     }
     
     func handleDatePicker(sender: UIDatePicker) {
+        displayDate(date: sender.date)
+    }
+    
+    func displayDate(date: Date) {
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .long
-        dateField.text = dateFormatter.string(from: sender.date).uppercased()
+        dateField.text = dateFormatter.string(from: date).uppercased()
     }
 }
 
