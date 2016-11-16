@@ -182,10 +182,16 @@ class GoalsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSF
         }
         
         
-        if let date = goal.date {
+        if let date = goal.date as? Date {
             let formatter = DateFormatter()
             formatter.dateStyle = .long
-            cell.dateLbl.text = formatter.string(from: date as Date)
+            cell.dateLbl.text = formatter.string(from: date)
+            
+            if Date().compare(date) == ComparisonResult.orderedDescending && selectedSegmentIndex == 0 {
+                cell.pastDueIcon.isHidden = false
+            } else {
+                cell.pastDueIcon.isHidden = true
+            }
         }
     }
     
