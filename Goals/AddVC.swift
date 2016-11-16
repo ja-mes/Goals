@@ -64,6 +64,14 @@ class AddVC: UIViewController, UITextFieldDelegate {
         dismiss(animated: true, completion: nil)
     }
 
+    @IBAction func dateEditingBegan(_ sender: CustomField) {
+        dateField.textColor = #colorLiteral(red: 1, green: 0.1558659971, blue: 0.145486623, alpha: 1)
+    }
+    
+    @IBAction func dateEditingEnded(_ sender: CustomField) {
+        dateField.textColor = .black
+    }
+    
     @IBAction func savePressed(_ sender: UIButton) {
         if let goal = configure() {
             goal.date = datePicker.date as NSDate?
