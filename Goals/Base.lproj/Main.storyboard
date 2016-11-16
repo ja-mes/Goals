@@ -361,7 +361,7 @@
                                                     </button>
                                                 </subviews>
                                             </stackView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fc-NL-8iq" customClass="RoundedButton" customModule="Goals" customModuleProvider="target">
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fc-NL-8iq" customClass="RoundedButton" customModule="Goals" customModuleProvider="target">
                                                 <rect key="frame" x="16" y="477.5" width="90" height="36"/>
                                                 <color key="backgroundColor" red="1" green="0.15586599707603455" blue="0.14548662304878235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -429,6 +429,7 @@
                     </view>
                     <connections>
                         <outlet property="dateField" destination="YC1-WM-Jkm" id="rPS-we-Spr"/>
+                        <outlet property="deleteButton" destination="0fc-NL-8iq" id="p8n-gK-Jbf"/>
                         <outlet property="name" destination="Mha-26-Ikh" id="ool-3h-uNa"/>
                         <outlet property="titleLabel" destination="TXs-PV-gJu" id="1Wg-6X-4Br"/>
                         <outletCollection property="colorButtons" destination="ZDb-2p-PM7" collectionClass="NSMutableArray" id="G3b-W4-wVe"/>
