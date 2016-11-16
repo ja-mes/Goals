@@ -29,6 +29,7 @@ class AddVC: UIViewController, UITextFieldDelegate {
         datePicker.datePickerMode = .date
         dateField.inputView = datePicker
         dateField.tintColor = UIColor.clear
+        datePicker.addTarget(self, action: #selector(handleDatePicker(sender:)), for: .valueChanged)
         
         if let goal = goal {
             name.text = goal.name
@@ -120,4 +121,27 @@ class AddVC: UIViewController, UITextFieldDelegate {
         
         self.present(alertController, animated: true, completion: nil)
     }
+    
+    func handleDatePicker(sender: UIDatePicker) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .long
+        dateField.text = dateFormatter.string(from: sender.date)
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
