@@ -12,6 +12,7 @@ class AddVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var name: CustomField!
     @IBOutlet var colorButtons: [CircleButton]!
     @IBOutlet weak var dateField: CustomField!
+    @IBOutlet weak var titleLabel: UILabel!
     
     var goal: Goal?
     var color: String?
@@ -32,6 +33,7 @@ class AddVC: UIViewController, UITextFieldDelegate {
         datePicker.addTarget(self, action: #selector(handleDatePicker(sender:)), for: .valueChanged)
         
         if let goal = goal {
+            titleLabel.text = "EDIT"
             name.text = goal.name
             
             if let date = goal.date as? Date {

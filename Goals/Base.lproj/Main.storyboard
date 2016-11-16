@@ -391,6 +391,7 @@
                     <connections>
                         <outlet property="dateField" destination="YC1-WM-Jkm" id="rPS-we-Spr"/>
                         <outlet property="name" destination="Mha-26-Ikh" id="ool-3h-uNa"/>
+                        <outlet property="titleLabel" destination="TXs-PV-gJu" id="1Wg-6X-4Br"/>
                         <outletCollection property="colorButtons" destination="ZDb-2p-PM7" collectionClass="NSMutableArray" id="G3b-W4-wVe"/>
                         <outletCollection property="colorButtons" destination="vpF-im-zoe" collectionClass="NSMutableArray" id="cNg-4z-opp"/>
                         <outletCollection property="colorButtons" destination="XWj-Tl-tCv" collectionClass="NSMutableArray" id="3st-do-Mhq"/>
