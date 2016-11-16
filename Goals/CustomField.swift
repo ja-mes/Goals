@@ -8,11 +8,17 @@
 
 import UIKit
 
-class CustomField: UITextField {
+@IBDesignable class CustomField: UITextField {
 
+    @IBInspectable var textPadding: CGFloat = 15 {
+        didSet {
+            let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: textPadding, height: frame.height))
+            leftView = paddingView
+            leftViewMode = UITextFieldViewMode.always
+        }
+    }
+    
     override func awakeFromNib() {
-        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: frame.height))
-        leftView = paddingView
-        leftViewMode = UITextFieldViewMode.always
+        
     }
 }
