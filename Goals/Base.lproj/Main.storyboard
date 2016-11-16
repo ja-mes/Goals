@@ -95,7 +95,7 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3N-fP-UrL">
-                                <rect key="frame" x="238.5" y="25" width="136.5" height="60"/>
+                                <rect key="frame" x="238.5" y="27.5" width="136.5" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="NRz-rG-BNo"/>
                                 </constraints>
@@ -156,11 +156,11 @@
                             <constraint firstAttribute="trailing" secondItem="U3N-fP-UrL" secondAttribute="trailing" id="424-wt-6Qo"/>
                             <constraint firstItem="JNS-OA-AWO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6ck-RY-cd5"/>
                             <constraint firstItem="lHG-AW-2aH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9B9-2T-L2A"/>
+                            <constraint firstItem="U3N-fP-UrL" firstAttribute="centerY" secondItem="lHG-AW-2aH" secondAttribute="centerY" id="E3N-on-The"/>
                             <constraint firstItem="JNS-OA-AWO" firstAttribute="top" secondItem="lHG-AW-2aH" secondAttribute="bottom" constant="17" id="gLR-Ps-gKU"/>
                             <constraint firstItem="lHG-AW-2aH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="40" id="lf1-pB-ETP"/>
                             <constraint firstAttribute="trailing" secondItem="iw4-Nm-kgk" secondAttribute="trailing" id="o2T-qb-52E"/>
                             <constraint firstItem="U3N-fP-UrL" firstAttribute="leading" secondItem="lHG-AW-2aH" secondAttribute="trailing" constant="8" id="pm1-uF-ud6"/>
-                            <constraint firstItem="U3N-fP-UrL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="5" id="ptX-Cw-odU"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iw4-Nm-kgk" secondAttribute="bottom" id="uqj-7D-EAM"/>
                         </constraints>
                     </view>
