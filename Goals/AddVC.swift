@@ -33,6 +33,7 @@ class AddVC: UIViewController, UITextFieldDelegate {
         dateField.tintColor = UIColor.clear
         datePicker.addTarget(self, action: #selector(handleDatePicker(sender:)), for: .valueChanged)
         
+        
         if let goal = goal {
             titleLabel.text = "EDIT"
             name.text = goal.name
