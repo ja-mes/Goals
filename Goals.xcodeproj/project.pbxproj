@@ -17,6 +17,7 @@
 		9B153A801DD015EF00F0BEEE /* AddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B153A7F1DD015EF00F0BEEE /* AddVC.swift */; };
 		9B153A821DD3DDAF00F0BEEE /* GoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B153A811DD3DDAF00F0BEEE /* GoalView.swift */; };
 		9B153A8F1DD4050000F0BEEE /* CustomField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B153A8E1DD4050000F0BEEE /* CustomField.swift */; };
+		9B1808E21DDE188400007C30 /* IntroScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1808E11DDE188400007C30 /* IntroScreen.swift */; };
 		9B4EAD1C1DDB8A1A004414C1 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4EAD1B1DDB8A1A004414C1 /* RoundedButton.swift */; };
 		9B6525FC1DD8BC0E0063DEAE /* HideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6525FB1DD8BC0E0063DEAE /* HideKeyboard.swift */; };
 		9BB93E3D1DD4E5A100A59FDF /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB93E3C1DD4E5A100A59FDF /* CircleButton.swift */; };
@@ -37,6 +38,7 @@
 		9B153A7F1DD015EF00F0BEEE /* AddVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddVC.swift; sourceTree = "<group>"; };
 		9B153A811DD3DDAF00F0BEEE /* GoalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalView.swift; sourceTree = "<group>"; };
 		9B153A8E1DD4050000F0BEEE /* CustomField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomField.swift; sourceTree = "<group>"; };
+		9B1808E11DDE188400007C30 /* IntroScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroScreen.swift; sourceTree = "<group>"; };
 		9B4EAD1B1DDB8A1A004414C1 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		9B6525FB1DD8BC0E0063DEAE /* HideKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HideKeyboard.swift; path = ../HideKeyboard.swift; sourceTree = "<group>"; };
 		9BB93E3C1DD4E5A100A59FDF /* CircleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 			children = (
 				9B153A681DCFC58B00F0BEEE /* GoalsVC.swift */,
 				9B153A7F1DD015EF00F0BEEE /* AddVC.swift */,
+				9B1808E11DDE188400007C30 /* IntroScreen.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				9BB93E3D1DD4E5A100A59FDF /* CircleButton.swift in Sources */,
 				9BB93E3F1DD4F89300A59FDF /* ColorHex.swift in Sources */,
 				9B153A801DD015EF00F0BEEE /* AddVC.swift in Sources */,
+				9B1808E21DDE188400007C30 /* IntroScreen.swift in Sources */,
 				9B153A691DCFC58B00F0BEEE /* GoalsVC.swift in Sources */,
 				9B153A8F1DD4050000F0BEEE /* CustomField.swift in Sources */,
 				9B4EAD1C1DDB8A1A004414C1 /* RoundedButton.swift in Sources */,

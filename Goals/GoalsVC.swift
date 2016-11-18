@@ -8,8 +8,9 @@
 
 import UIKit
 import CoreData
+import EAIntroView
 
-class GoalsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSFetchedResultsControllerDelegate {
+class GoalsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSFetchedResultsControllerDelegate, EAIntroDelegate {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var currentButton: RoundedButton!
     @IBOutlet weak var doneButton: RoundedButton!
@@ -27,6 +28,45 @@ class GoalsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSF
         
         let longPressRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(longPress(longPressGestureRecognizer:)))
         self.view.addGestureRecognizer(longPressRecognizer)
+        
+        
+        if UserDefaults.standard.object(forKey: "firstLaunch") == nil {
+            let page1 = EAIntroPage()
+            page1.title = "Swipe to continue"
+            page1.titleFont = UIFont(name: "AvenirNext-Medium", size: 18)
+            page1.titlePositionY = 100
+            page1.titleIconView = UIImageView(image: #imageLiteral(resourceName: "Screen1"))
+            page1.titleIconPositionY = 80
+            page1.bgColor = #colorLiteral(red: 1, green: 0.1558659971, blue: 0.145486623, alpha: 1)
+            page1.descFont = UIFont(name: "Avenir Next", size: 15)
+            
+            let page2 = EAIntroPage()
+            page2.title = "Swipe to continue"
+            page2.titleFont = UIFont(name: "AvenirNext-Medium", size: 18)
+            page2.titlePositionY = 95
+            page2.titleIconView = UIImageView(image: #imageLiteral(resourceName: "Screen2"))
+            page2.titleIconPositionY = 80
+            page2.bgColor = #colorLiteral(red: 1, green: 0.1558659971, blue: 0.145486623, alpha: 1)
+            page2.descFont = UIFont(name: "Avenir Next", size: 15)
+            
+            let page3 = EAIntroPage()
+            page3.title = "Swipe to continue"
+            page3.titleFont = UIFont(name: "AvenirNext-Medium", size: 18)
+            page3.titlePositionY = 95
+            page3.titleIconView = UIImageView(image: #imageLiteral(resourceName: "Screen 3"))
+            page3.titleIconPositionY = 80
+            page3.bgColor = #colorLiteral(red: 1, green: 0.1558659971, blue: 0.145486623, alpha: 1)
+            page3.descFont = UIFont(name: "Avenir Next", size: 15)
+            
+            let intro = EAIntroView(frame: self.view.bounds, andPages: [page1, page2, page3])
+            
+            intro?.delegate = self
+            intro?.show(in: self.view, animateDuration: 0.0)
+            
+            UserDefaults.standard.set(true, forKey: "firstLaunch")
+            
+        }
+
         
     }
     
