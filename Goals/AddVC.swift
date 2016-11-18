@@ -107,6 +107,7 @@ class AddVC: UIViewController, UITextFieldDelegate {
             
             deleteAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
                 context.delete(goal)
+                appDel.saveContext()
                 self.dismiss(animated: true, completion: nil)
             }))
             
