@@ -14,6 +14,7 @@ class AddVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var dateField: CustomField!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var deleteButton: RoundedButton!
+    @IBOutlet weak var markAsDoneButton: RoundedButton!
     
     var goal: Goal?
     var color: String?
@@ -38,6 +39,7 @@ class AddVC: UIViewController, UITextFieldDelegate {
             titleLabel.text = "EDIT"
             name.text = goal.name
             deleteButton.isHidden = false
+            markAsDoneButton.isHidden = false
             
             if let date = goal.date as? Date {
                 datePicker.setDate(date, animated: true)

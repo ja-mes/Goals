@@ -261,13 +261,13 @@
                                                 </constraints>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COMPLETION DATE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P0G-fh-ztJ">
-                                                <rect key="frame" x="16" y="284.5" width="141.5" height="20.5"/>
+                                                <rect key="frame" x="16" y="284" width="141.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
                                                 <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="AUGUST 31, 2017" placeholder="Enter goal name" textAlignment="natural" minimumFontSize="17" background="textField" translatesAutoresizingMaskIntoConstraints="NO" id="YC1-WM-Jkm" customClass="CustomField" customModule="Goals" customModuleProvider="target">
-                                                <rect key="frame" x="16" y="320.5" width="343" height="41"/>
+                                                <rect key="frame" x="16" y="320" width="343" height="41"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="41" id="zsb-B3-ZSN"/>
                                                 </constraints>
@@ -285,7 +285,7 @@
                                                 </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COLOR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6S-DR-juc">
-                                                <rect key="frame" x="16" y="408.5" width="52.5" height="20.5"/>
+                                                <rect key="frame" x="16" y="408" width="52.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
                                                 <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -364,7 +364,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="JhE-nd-Jac">
                                                 <rect key="frame" x="125" y="107" width="234" height="30"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XOi-Xc-j5t" customClass="RoundedButton" customModule="Goals" customModuleProvider="target">
+                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XOi-Xc-j5t" customClass="RoundedButton" customModule="Goals" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="130" height="30"/>
                                                         <color key="backgroundColor" red="0.35510146617889404" green="0.72565126419067383" blue="0.38721144199371338" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
@@ -452,6 +452,7 @@
                     <connections>
                         <outlet property="dateField" destination="YC1-WM-Jkm" id="rPS-we-Spr"/>
                         <outlet property="deleteButton" destination="0fc-NL-8iq" id="p8n-gK-Jbf"/>
+                        <outlet property="markAsDoneButton" destination="XOi-Xc-j5t" id="Afa-Wt-w3s"/>
                         <outlet property="name" destination="Mha-26-Ikh" id="ool-3h-uNa"/>
                         <outlet property="titleLabel" destination="TXs-PV-gJu" id="1Wg-6X-4Br"/>
                         <outletCollection property="colorButtons" destination="ZDb-2p-PM7" collectionClass="NSMutableArray" id="G3b-W4-wVe"/>
