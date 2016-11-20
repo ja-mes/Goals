@@ -106,7 +106,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JNS-OA-AWO">
-                                <rect key="frame" x="116.5" y="91.5" width="142" height="26"/>
+                                <rect key="frame" x="78.5" y="91.5" width="218" height="26"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfB-Gv-Xkt" customClass="RoundedButton" customModule="Goals" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="66" height="26"/>
@@ -145,6 +145,21 @@
                                         <connections>
                                             <action selector="segmentChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dGJ-eQ-3Xc"/>
                                         </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QdO-3s-3RU" customClass="RoundedButton" customModule="Goals" customModuleProvider="target">
+                                        <rect key="frame" x="152" y="0.0" width="66" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="66" id="v3F-iF-1z0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="10"/>
+                                        <state key="normal" title="FAILED">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </button>
                                 </subviews>
                             </stackView>
