@@ -361,11 +361,11 @@
                                                     </button>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="JhE-nd-Jac">
-                                                <rect key="frame" x="16" y="479" width="234" height="30"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="JhE-nd-Jac">
+                                                <rect key="frame" x="16" y="479" width="0.0" height="0.0"/>
                                                 <subviews>
-                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XOi-Xc-j5t" customClass="RoundedButton" customModule="Goals" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="130" height="30"/>
+                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XOi-Xc-j5t" customClass="RoundedButton" customModule="Goals" customModuleProvider="target">
+                                                        <rect key="frame" x="-16" y="-479" width="0.0" height="30"/>
                                                         <color key="backgroundColor" red="0.35510146617889404" green="0.72565126419067383" blue="0.38721144199371338" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="130" id="1a2-KA-3gH"/>
@@ -384,8 +384,8 @@
                                                             <action selector="markAsDonePressed:" destination="MrB-al-WmQ" eventType="touchUpInside" id="pef-n9-42Z"/>
                                                         </connections>
                                                     </button>
-                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fc-NL-8iq" customClass="RoundedButton" customModule="Goals" customModuleProvider="target">
-                                                        <rect key="frame" x="144" y="0.0" width="90" height="30"/>
+                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fc-NL-8iq" customClass="RoundedButton" customModule="Goals" customModuleProvider="target">
+                                                        <rect key="frame" x="-16" y="-479" width="0.0" height="30"/>
                                                         <color key="backgroundColor" red="1" green="0.15586599707603455" blue="0.14548662304878235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="90" id="6RC-dv-Ae2"/>

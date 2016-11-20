@@ -39,7 +39,10 @@ class AddVC: UIViewController, UITextFieldDelegate {
             titleLabel.text = "EDIT"
             name.text = goal.name
             deleteButton.isHidden = false
-            markAsDoneButton.isHidden = false
+            
+            if !goal.done {
+                markAsDoneButton.isHidden = false
+            }
             
             if let date = goal.date as? Date {
                 datePicker.setDate(date, animated: true)
