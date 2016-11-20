@@ -14,6 +14,7 @@ class GoalsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSF
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var currentButton: RoundedButton!
     @IBOutlet weak var doneButton: RoundedButton!
+    @IBOutlet weak var failedButton: RoundedButton!
     
     var controller: NSFetchedResultsController<Goal>!
     var selectedSegmentIndex = 0
@@ -122,21 +123,30 @@ class GoalsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSF
             if selectedSegmentIndex != 1 {
                 doneButton.backgroundColor = UIColor(hexString: "#D6D6D6")
                 currentButton.backgroundColor = UIColor.white
+                failedButton.backgroundColor = UIColor.white
                 
                 selectedSegmentIndex = 1
-                fetchGoals()
-                tableView.reloadData()
             }
         } else if sender == currentButton {
             if selectedSegmentIndex != 0 {
                 doneButton.backgroundColor = UIColor.white
+                failedButton.backgroundColor = UIColor.white
                 currentButton.backgroundColor = UIColor(hexString: "#D6D6D6")
                 
                 selectedSegmentIndex = 0
-                fetchGoals()
-                tableView.reloadData()
+            }
+        } else if sender == failedButton {
+            if selectedSegmentIndex != 2 {
+                failedButton.backgroundColor = UIColor(hexString: "D6D6D6")
+                currentButton.backgroundColor = UIColor.white
+                doneButton.backgroundColor = UIColor.white
+                
+                selectedSegmentIndex = 2
             }
         }
+        
+        fetchGoals()
+        tableView.reloadData()
     }
     
 
@@ -248,7 +258,5 @@ class GoalsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSF
             }
         }
     }
-
-
 }
 

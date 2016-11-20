@@ -15,6 +15,7 @@ class AddVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var deleteButton: RoundedButton!
     @IBOutlet weak var markAsDoneButton: RoundedButton!
+    @IBOutlet weak var failedButton: RoundedButton!
     
     var goal: Goal?
     var color: String?
@@ -39,6 +40,7 @@ class AddVC: UIViewController, UITextFieldDelegate {
             titleLabel.text = "EDIT"
             name.text = goal.name
             deleteButton.isHidden = false
+            failedButton.isHidden = false
             
             if !goal.done {
                 markAsDoneButton.isHidden = false
