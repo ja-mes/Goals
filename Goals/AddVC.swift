@@ -127,7 +127,20 @@ class AddVC: UIViewController, UITextFieldDelegate {
         if let goal = goal {
             goal.done = true
             appDel.saveContext()
-            dismiss(animated: true, completion: nil)
+            
+            
+            if UserDefaults.standard.object(forKey: "toldUserAboutLongPress") == nil {
+                let alertController = UIAlertController(title: "Here's a tip", message:
+                    "You can also tap and hold on a any goal in your goal list to mark it as done.", preferredStyle: UIAlertControllerStyle.alert)
+                alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: { (action) in
+                    self.dismiss(animated: true, completion: nil)
+                }))
+                
+                self.present(alertController, animated: true, completion: nil)
+                UserDefaults.standard.set(true, forKey: "toldUserAboutLongPress")
+            } else {
+                dismiss(animated: true, completion: nil)
+            }
         }
     }
     
