@@ -42,7 +42,7 @@ class AddVC: UIViewController, UITextFieldDelegate {
             deleteButton.isHidden = false
             failedButton.isHidden = false
             
-            if !goal.done {
+            if goal.done == 1 {
                 markAsDoneButton.isHidden = false
             }
             
@@ -127,7 +127,7 @@ class AddVC: UIViewController, UITextFieldDelegate {
     
     @IBAction func markAsDonePressed(_ sender: RoundedButton) {
         if let goal = goal {
-            goal.done = true
+            goal.done = 1
             appDel.saveContext()
             
             

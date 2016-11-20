@@ -253,7 +253,11 @@ class GoalsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSF
             
             if let indexPath = tableView.indexPathForRow(at: touchPoint) {
                 let goal = controller.object(at: indexPath)
-                goal.done = !goal.done
+                if goal.done == 0 {
+                    goal.done = 1
+                } else if goal.done == 1 {
+                    goal.done = 0
+                }
                 appDel.saveContext()
             }
         }
