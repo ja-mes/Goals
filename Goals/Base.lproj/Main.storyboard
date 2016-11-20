@@ -227,7 +227,7 @@
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="sZr-If-iaI">
-                                                <rect key="frame" x="16" y="120" width="343" height="76.5"/>
+                                                <rect key="frame" x="16" y="157" width="343" height="76.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GlW-dB-RGX">
                                                         <rect key="frame" x="0.0" y="0.0" width="45" height="20.5"/>
@@ -258,13 +258,13 @@
                                                 </constraints>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COMPLETION DATE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P0G-fh-ztJ">
-                                                <rect key="frame" x="16" y="243.5" width="141.5" height="20.5"/>
+                                                <rect key="frame" x="16" y="283.5" width="141.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
                                                 <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="AUGUST 31, 2017" placeholder="Enter goal name" textAlignment="natural" minimumFontSize="17" background="textField" translatesAutoresizingMaskIntoConstraints="NO" id="YC1-WM-Jkm" customClass="CustomField" customModule="Goals" customModuleProvider="target">
-                                                <rect key="frame" x="16" y="279" width="343" height="41"/>
+                                                <rect key="frame" x="16" y="319.5" width="343" height="41"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="41" id="zsb-B3-ZSN"/>
                                                 </constraints>
@@ -282,13 +282,13 @@
                                                 </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COLOR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6S-DR-juc">
-                                                <rect key="frame" x="16" y="367" width="52.5" height="20.5"/>
+                                                <rect key="frame" x="16" y="410.5" width="52.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
                                                 <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="22W-VT-iAz">
-                                                <rect key="frame" x="16" y="403.5" width="250" height="25"/>
+                                                <rect key="frame" x="16" y="446.5" width="250" height="25"/>
                                                 <subviews>
                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZDb-2p-PM7" customClass="CircleButton" customModule="Goals" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
@@ -359,13 +359,13 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="JhE-nd-Jac">
-                                                <rect key="frame" x="16" y="479" width="343" height="30"/>
+                                                <rect key="frame" x="16" y="98" width="343" height="32"/>
                                                 <subviews>
                                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XOi-Xc-j5t" customClass="RoundedButton" customModule="Goals" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="105" height="30"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="105" height="32"/>
                                                         <color key="backgroundColor" red="0.35510146617889404" green="0.72565126419067383" blue="0.38721144199371338" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
-                                                        <state key="normal" title="COMPLETED">
+                                                        <state key="normal" title="DONE">
                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
                                                         <userDefinedRuntimeAttributes>
@@ -377,8 +377,8 @@
                                                             <action selector="markAsDonePressed:" destination="MrB-al-WmQ" eventType="touchUpInside" id="pef-n9-42Z"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0B-q5-EsE" customClass="RoundedButton" customModule="Goals" customModuleProvider="target">
-                                                        <rect key="frame" x="119" y="0.0" width="105" height="30"/>
+                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0B-q5-EsE" customClass="RoundedButton" customModule="Goals" customModuleProvider="target">
+                                                        <rect key="frame" x="119" y="0.0" width="105" height="32"/>
                                                         <color key="backgroundColor" red="1" green="0.38556748628616333" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
                                                         <state key="normal" title="FAILED">
@@ -394,7 +394,7 @@
                                                         </connections>
                                                     </button>
                                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fc-NL-8iq" customClass="RoundedButton" customModule="Goals" customModuleProvider="target">
-                                                        <rect key="frame" x="238" y="0.0" width="105" height="30"/>
+                                                        <rect key="frame" x="238" y="0.0" width="105" height="32"/>
                                                         <color key="backgroundColor" red="1" green="0.15586599707603455" blue="0.14548662304878235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
                                                         <state key="normal" title="DELETE">
@@ -410,37 +410,34 @@
                                                         </connections>
                                                     </button>
                                                 </subviews>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="XI3-e2-d4r"/>
-                                                </constraints>
                                             </stackView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstItem="JhE-nd-Jac" firstAttribute="leading" secondItem="NhG-FS-E8Q" secondAttribute="leading" constant="16" id="1sF-la-Oew"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="sZr-If-iaI" secondAttribute="trailing" constant="8" id="2Yy-hc-pLP"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="uA5-k7-4dS" secondAttribute="trailing" constant="8" id="3QM-EA-0Zg"/>
-                                            <constraint firstItem="P0G-fh-ztJ" firstAttribute="top" secondItem="sZr-If-iaI" secondAttribute="bottom" constant="47" id="4m6-rH-fga"/>
+                                            <constraint firstItem="P0G-fh-ztJ" firstAttribute="top" secondItem="sZr-If-iaI" secondAttribute="bottom" constant="50" id="4m6-rH-fga"/>
                                             <constraint firstItem="22W-VT-iAz" firstAttribute="top" secondItem="J6S-DR-juc" secondAttribute="bottom" constant="16" id="8R9-RE-cfs"/>
                                             <constraint firstAttribute="height" constant="622" id="9l7-m3-M64"/>
                                             <constraint firstItem="22W-VT-iAz" firstAttribute="leading" secondItem="NhG-FS-E8Q" secondAttribute="leading" constant="16" id="A4t-kK-aUJ"/>
+                                            <constraint firstItem="JhE-nd-Jac" firstAttribute="leading" secondItem="NhG-FS-E8Q" secondAttribute="leading" constant="16" id="BEg-g1-141"/>
                                             <constraint firstItem="TXs-PV-gJu" firstAttribute="centerX" secondItem="NhG-FS-E8Q" secondAttribute="centerX" id="Eoh-Ne-EGU"/>
                                             <constraint firstItem="YC1-WM-Jkm" firstAttribute="leading" secondItem="NhG-FS-E8Q" secondAttribute="leading" constant="16" id="JTi-TT-df2"/>
-                                            <constraint firstItem="sZr-If-iaI" firstAttribute="top" secondItem="uA5-k7-4dS" secondAttribute="bottom" constant="30" id="PVx-xQ-E6F"/>
-                                            <constraint firstAttribute="trailing" secondItem="JhE-nd-Jac" secondAttribute="trailing" constant="16" id="W7i-TG-FmJ"/>
                                             <constraint firstItem="TXs-PV-gJu" firstAttribute="leading" secondItem="UHG-VI-2DE" secondAttribute="trailing" constant="8" id="WOQ-3r-Fm0"/>
-                                            <constraint firstItem="JhE-nd-Jac" firstAttribute="top" secondItem="22W-VT-iAz" secondAttribute="bottom" constant="50" id="Y01-lb-0aX"/>
+                                            <constraint firstAttribute="trailing" secondItem="JhE-nd-Jac" secondAttribute="trailing" constant="16" id="XTd-b1-lV2"/>
                                             <constraint firstItem="uA5-k7-4dS" firstAttribute="top" secondItem="NhG-FS-E8Q" secondAttribute="top" constant="30" id="aAj-ls-7OX"/>
                                             <constraint firstItem="P0G-fh-ztJ" firstAttribute="leading" secondItem="NhG-FS-E8Q" secondAttribute="leadingMargin" constant="8" id="cV2-Zo-ZCM"/>
                                             <constraint firstItem="sZr-If-iaI" firstAttribute="leading" secondItem="NhG-FS-E8Q" secondAttribute="leadingMargin" constant="8" id="dZY-ze-9KZ"/>
+                                            <constraint firstItem="sZr-If-iaI" firstAttribute="top" secondItem="JhE-nd-Jac" secondAttribute="bottom" constant="27" id="dlF-jP-pHH"/>
                                             <constraint firstItem="TXs-PV-gJu" firstAttribute="top" secondItem="NhG-FS-E8Q" secondAttribute="top" constant="40" id="fgU-vq-b0v"/>
                                             <constraint firstItem="UHG-VI-2DE" firstAttribute="top" secondItem="NhG-FS-E8Q" secondAttribute="top" constant="25" id="lds-XV-nHA"/>
                                             <constraint firstItem="YC1-WM-Jkm" firstAttribute="top" secondItem="P0G-fh-ztJ" secondAttribute="bottom" constant="15" id="meD-ue-Pzu"/>
                                             <constraint firstItem="uA5-k7-4dS" firstAttribute="leading" secondItem="TXs-PV-gJu" secondAttribute="trailing" constant="8" id="nv7-yN-ODO"/>
                                             <constraint firstItem="J6S-DR-juc" firstAttribute="leading" secondItem="NhG-FS-E8Q" secondAttribute="leadingMargin" constant="8" id="pUe-lc-zSu"/>
-                                            <constraint firstItem="J6S-DR-juc" firstAttribute="top" secondItem="YC1-WM-Jkm" secondAttribute="bottom" constant="47" id="pgL-Gl-Z7M"/>
+                                            <constraint firstItem="J6S-DR-juc" firstAttribute="top" secondItem="YC1-WM-Jkm" secondAttribute="bottom" constant="50" id="pgL-Gl-Z7M"/>
                                             <constraint firstAttribute="trailing" secondItem="YC1-WM-Jkm" secondAttribute="trailing" constant="16" id="qW6-zo-EfF"/>
                                             <constraint firstItem="UHG-VI-2DE" firstAttribute="leading" secondItem="NhG-FS-E8Q" secondAttribute="leading" id="qv6-8h-wp2"/>
+                                            <constraint firstItem="JhE-nd-Jac" firstAttribute="top" secondItem="UHG-VI-2DE" secondAttribute="bottom" constant="13" id="s6t-Yv-fjQ"/>
                                         </constraints>
                                     </view>
                                 </subviews>
