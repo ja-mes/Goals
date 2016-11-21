@@ -227,11 +227,6 @@ class GoalsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSF
         
         if let color = goal.color {
             cell.view.backgroundColor = UIColor(hexString: color)
-    
-            if selectedSegmentIndex == 1 {
-                cell.view.backgroundColor = cell.view.backgroundColor?.withAlphaComponent(0.7)
-            }
-            
         }
         
         
