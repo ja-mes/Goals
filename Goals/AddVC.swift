@@ -146,6 +146,16 @@ class AddVC: UIViewController, UITextFieldDelegate {
         }
     }
     
+    @IBAction func failedPressed(_ sender: RoundedButton) {
+        if let goal = goal {
+            goal.done = 2
+            appDel.saveContext()
+            
+            
+            dismiss(animated: true, completion: nil)
+        }
+    }
+    
     @IBAction func colorPressed(_ sender: CircleButton) {
         if let color = sender.backgroundColor {
             

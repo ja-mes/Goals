@@ -409,6 +409,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
+                                                            <action selector="failedPressed:" destination="MrB-al-WmQ" eventType="touchUpInside" id="FEG-0J-3pz"/>
                                                             <action selector="markAsDonePressed:" destination="MrB-al-WmQ" eventType="touchUpInside" id="PMZ-MN-dc5"/>
                                                         </connections>
                                                     </button>
