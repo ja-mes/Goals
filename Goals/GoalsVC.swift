@@ -196,13 +196,15 @@ class GoalsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSF
         fetchRequest.sortDescriptors = [NSSortDescriptor(key: "date", ascending: true)]
         
         
-        var shouldShowDone = true
+        var displayedType = 0
         
-        if selectedSegmentIndex == 0 {
-            shouldShowDone = false
+        if selectedSegmentIndex == 1 {
+            displayedType = 1
+        } else if selectedSegmentIndex == 2 {
+            displayedType = 2
         }
         
-        fetchRequest.predicate = NSPredicate(format: "done == %@", shouldShowDone as CVarArg)
+        fetchRequest.predicate = NSPredicate(format: "done == %@", "\(displayedType)" as CVarArg)
         
         
         
