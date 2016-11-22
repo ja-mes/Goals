@@ -166,9 +166,8 @@ class AddVC: UIViewController, UITextFieldDelegate {
             self.color = color.toHexString()
             
             sender.selectedColor = true
-            
         
-            if let oldColor = oldSelectedColor {
+            if let oldColor = oldSelectedColor, sender != oldColor {
                 oldColor.selectedColor = false
             }
             
