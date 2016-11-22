@@ -263,7 +263,7 @@ class GoalsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSF
                 let goal = controller.object(at: indexPath)
                 if goal.done == 0 {
                     goal.done = 1
-                } else if goal.done == 1 {
+                } else {
                     goal.done = 0
                 }
                 appDel.saveContext()
