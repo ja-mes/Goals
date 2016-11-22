@@ -245,16 +245,16 @@
                                                     <action selector="savePressed:" destination="MrB-al-WmQ" eventType="touchUpInside" id="rRP-Xe-GKs"/>
                                                 </connections>
                                             </button>
-                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="sZr-If-iaI">
-                                                <rect key="frame" x="16" y="157" width="343" height="77"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="sZr-If-iaI">
+                                                <rect key="frame" x="16" y="157" width="343" height="76.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GlW-dB-RGX">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GlW-dB-RGX">
                                                         <rect key="frame" x="0.0" y="0.0" width="45" height="20.5"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
                                                         <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter goal name" textAlignment="natural" minimumFontSize="17" background="textField" translatesAutoresizingMaskIntoConstraints="NO" id="Mha-26-Ikh" customClass="CustomField" customModule="Goals" customModuleProvider="target">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter goal name" textAlignment="natural" minimumFontSize="17" background="textField" translatesAutoresizingMaskIntoConstraints="NO" id="Mha-26-Ikh" customClass="CustomField" customModule="Goals" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="35.5" width="343" height="41"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="41" id="abj-lU-hoB"/>
@@ -276,14 +276,14 @@
                                                     <constraint firstAttribute="trailingMargin" secondItem="Mha-26-Ikh" secondAttribute="trailing" id="vsj-9g-zed"/>
                                                 </constraints>
                                             </stackView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="COMPLETION DATE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P0G-fh-ztJ">
-                                                <rect key="frame" x="16" y="283" width="141.5" height="20.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COMPLETION DATE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P0G-fh-ztJ">
+                                                <rect key="frame" x="16" y="283.5" width="141.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
                                                 <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="AUGUST 31, 2017" placeholder="Enter goal name" textAlignment="natural" minimumFontSize="17" background="textField" translatesAutoresizingMaskIntoConstraints="NO" id="YC1-WM-Jkm" customClass="CustomField" customModule="Goals" customModuleProvider="target">
-                                                <rect key="frame" x="16" y="319" width="343" height="41"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="AUGUST 31, 2017" placeholder="Enter goal name" textAlignment="natural" minimumFontSize="17" background="textField" translatesAutoresizingMaskIntoConstraints="NO" id="YC1-WM-Jkm" customClass="CustomField" customModule="Goals" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="319.5" width="343" height="41"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="41" id="zsb-B3-ZSN"/>
                                                 </constraints>
@@ -300,16 +300,16 @@
                                                     <action selector="dateEditingEnded:" destination="MrB-al-WmQ" eventType="editingDidEnd" id="KgG-J7-fdA"/>
                                                 </connections>
                                             </textField>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="COLOR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6S-DR-juc">
-                                                <rect key="frame" x="16" y="410" width="52.5" height="20.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COLOR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6S-DR-juc">
+                                                <rect key="frame" x="16" y="410.5" width="52.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
                                                 <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="22W-VT-iAz">
+                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="22W-VT-iAz">
                                                 <rect key="frame" x="16" y="448" width="250" height="25"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZDb-2p-PM7" customClass="CircleButton" customModule="Goals" customModuleProvider="target">
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZDb-2p-PM7" customClass="CircleButton" customModule="Goals" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
                                                         <color key="backgroundColor" red="0.95686274510000002" green="0.26274509800000001" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
@@ -320,7 +320,7 @@
                                                             <action selector="colorPressed:" destination="MrB-al-WmQ" eventType="touchUpInside" id="FrD-32-mgo"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpF-im-zoe" customClass="CircleButton" customModule="Goals" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpF-im-zoe" customClass="CircleButton" customModule="Goals" customModuleProvider="target">
                                                         <rect key="frame" x="45" y="0.0" width="25" height="25"/>
                                                         <color key="backgroundColor" red="0.61176470588235299" green="0.15294117647058825" blue="0.69019607843137254" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
@@ -331,7 +331,7 @@
                                                             <action selector="colorPressed:" destination="MrB-al-WmQ" eventType="touchUpInside" id="b5Y-J8-IDk"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XWj-Tl-tCv" customClass="CircleButton" customModule="Goals" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XWj-Tl-tCv" customClass="CircleButton" customModule="Goals" customModuleProvider="target">
                                                         <rect key="frame" x="90" y="0.0" width="25" height="25"/>
                                                         <color key="backgroundColor" red="0.12941176470588234" green="0.58823529411764708" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
@@ -342,7 +342,7 @@
                                                             <action selector="colorPressed:" destination="MrB-al-WmQ" eventType="touchUpInside" id="tvK-8z-OyU"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HdM-UC-g8n" customClass="CircleButton" customModule="Goals" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HdM-UC-g8n" customClass="CircleButton" customModule="Goals" customModuleProvider="target">
                                                         <rect key="frame" x="135" y="0.0" width="25" height="25"/>
                                                         <color key="backgroundColor" red="0.9137254901960784" green="0.11764705882352941" blue="0.38823529411764707" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
@@ -353,7 +353,7 @@
                                                             <action selector="colorPressed:" destination="MrB-al-WmQ" eventType="touchUpInside" id="TyE-oV-1Et"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2y-Hd-ZBc" customClass="CircleButton" customModule="Goals" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2y-Hd-ZBc" customClass="CircleButton" customModule="Goals" customModuleProvider="target">
                                                         <rect key="frame" x="180" y="0.0" width="25" height="25"/>
                                                         <color key="backgroundColor" red="0.47450980392156861" green="0.33333333333333331" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
@@ -364,7 +364,7 @@
                                                             <action selector="colorPressed:" destination="MrB-al-WmQ" eventType="touchUpInside" id="L5W-Lz-YYf"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhn-ec-PaM" customClass="CircleButton" customModule="Goals" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhn-ec-PaM" customClass="CircleButton" customModule="Goals" customModuleProvider="target">
                                                         <rect key="frame" x="225" y="0.0" width="25" height="25"/>
                                                         <color key="backgroundColor" red="0.29803921568627451" green="0.68627450980392157" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
@@ -377,11 +377,11 @@
                                                     </button>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="JhE-nd-Jac">
-                                                <rect key="frame" x="16" y="98" width="343" height="0.0"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="JhE-nd-Jac">
+                                                <rect key="frame" x="16" y="98" width="343" height="32"/>
                                                 <subviews>
-                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XOi-Xc-j5t" customClass="RoundedButton" customModule="Goals" customModuleProvider="target">
-                                                        <rect key="frame" x="-16" y="-98" width="0.0" height="32"/>
+                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XOi-Xc-j5t" customClass="RoundedButton" customModule="Goals" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="75.5" height="32"/>
                                                         <color key="backgroundColor" red="0.35510146617889404" green="0.72565126419067383" blue="0.38721144199371338" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
                                                         <state key="normal" title="DONE">
@@ -396,11 +396,11 @@
                                                             <action selector="markAsDonePressed:" destination="MrB-al-WmQ" eventType="touchUpInside" id="pef-n9-42Z"/>
                                                         </connections>
                                                     </button>
-                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gfa-3B-Y3A" customClass="RoundedButton" customModule="Goals" customModuleProvider="target">
-                                                        <rect key="frame" x="-16" y="-98" width="0.0" height="32"/>
+                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gfa-3B-Y3A" customClass="RoundedButton" customModule="Goals" customModuleProvider="target">
+                                                        <rect key="frame" x="89.5" y="0.0" width="75" height="32"/>
                                                         <color key="backgroundColor" red="0.35510146619999999" green="0.72565126420000003" blue="0.38721144200000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
-                                                        <state key="normal" title="TRY AGAIN">
+                                                        <state key="normal" title="DO AGAIN">
                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
                                                         <userDefinedRuntimeAttributes>
@@ -412,8 +412,8 @@
                                                             <action selector="tryAgainPressed:" destination="MrB-al-WmQ" eventType="touchUpInside" id="D0g-7D-SIm"/>
                                                         </connections>
                                                     </button>
-                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0B-q5-EsE" customClass="RoundedButton" customModule="Goals" customModuleProvider="target">
-                                                        <rect key="frame" x="-16" y="-98" width="0.0" height="32"/>
+                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0B-q5-EsE" customClass="RoundedButton" customModule="Goals" customModuleProvider="target">
+                                                        <rect key="frame" x="178.5" y="0.0" width="75.5" height="32"/>
                                                         <color key="backgroundColor" red="1" green="0.38556748628616333" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
                                                         <state key="normal" title="FAILED">
@@ -428,8 +428,8 @@
                                                             <action selector="failedPressed:" destination="MrB-al-WmQ" eventType="touchUpInside" id="FEG-0J-3pz"/>
                                                         </connections>
                                                     </button>
-                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fc-NL-8iq" customClass="RoundedButton" customModule="Goals" customModuleProvider="target">
-                                                        <rect key="frame" x="-16" y="-98" width="0.0" height="32"/>
+                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fc-NL-8iq" customClass="RoundedButton" customModule="Goals" customModuleProvider="target">
+                                                        <rect key="frame" x="268" y="0.0" width="75" height="32"/>
                                                         <color key="backgroundColor" red="1" green="0.15586599707603455" blue="0.14548662304878235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
                                                         <state key="normal" title="DELETE">
