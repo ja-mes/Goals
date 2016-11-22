@@ -40,10 +40,12 @@ class AddVC: UIViewController, UITextFieldDelegate {
             titleLabel.text = "EDIT"
             name.text = goal.name
             deleteButton.isHidden = false
-            failedButton.isHidden = false
             
             if goal.done == 0 {
                 markAsDoneButton.isHidden = false
+            }
+            if goal.done != 2 {
+                failedButton.isHidden = false
             }
             
             if let date = goal.date as? Date {
