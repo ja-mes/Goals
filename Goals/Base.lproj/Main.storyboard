@@ -277,13 +277,13 @@
                                                 </constraints>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="COMPLETION DATE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P0G-fh-ztJ">
-                                                <rect key="frame" x="16" y="283.5" width="141.5" height="20.5"/>
+                                                <rect key="frame" x="16" y="283" width="141.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
                                                 <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="AUGUST 31, 2017" placeholder="Enter goal name" textAlignment="natural" minimumFontSize="17" background="textField" translatesAutoresizingMaskIntoConstraints="NO" id="YC1-WM-Jkm" customClass="CustomField" customModule="Goals" customModuleProvider="target">
-                                                <rect key="frame" x="16" y="319.5" width="343" height="41"/>
+                                                <rect key="frame" x="16" y="319" width="343" height="41"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="41" id="zsb-B3-ZSN"/>
                                                 </constraints>
@@ -301,7 +301,7 @@
                                                 </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="COLOR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6S-DR-juc">
-                                                <rect key="frame" x="16" y="410.5" width="52.5" height="20.5"/>
+                                                <rect key="frame" x="16" y="410" width="52.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
                                                 <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -410,7 +410,6 @@
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
                                                             <action selector="failedPressed:" destination="MrB-al-WmQ" eventType="touchUpInside" id="FEG-0J-3pz"/>
-                                                            <action selector="markAsDonePressed:" destination="MrB-al-WmQ" eventType="touchUpInside" id="PMZ-MN-dc5"/>
                                                         </connections>
                                                     </button>
                                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fc-NL-8iq" customClass="RoundedButton" customModule="Goals" customModuleProvider="target">

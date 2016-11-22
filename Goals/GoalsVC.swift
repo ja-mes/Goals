@@ -126,6 +126,10 @@ class GoalsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSF
                 failedButton.backgroundColor = UIColor.white
                 
                 selectedSegmentIndex = 1
+                
+                
+                fetchGoals()
+                tableView.reloadData()
             }
         } else if sender == currentButton {
             if selectedSegmentIndex != 0 {
@@ -134,6 +138,10 @@ class GoalsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSF
                 currentButton.backgroundColor = UIColor(hexString: "#D6D6D6")
                 
                 selectedSegmentIndex = 0
+                
+                
+                fetchGoals()
+                tableView.reloadData()
             }
         } else if sender == failedButton {
             if selectedSegmentIndex != 2 {
@@ -142,11 +150,13 @@ class GoalsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSF
                 doneButton.backgroundColor = UIColor.white
                 
                 selectedSegmentIndex = 2
+                
+                
+                fetchGoals()
+                tableView.reloadData()
             }
         }
-        
-        fetchGoals()
-        tableView.reloadData()
+
     }
     
 
@@ -223,6 +233,7 @@ class GoalsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSF
     
     func configureCell(cell: GoalCell, indexPath: IndexPath) {
         let goal = controller.object(at: indexPath)
+        
         cell.nameLbl.text = goal.name?.uppercased()
         
         if let color = goal.color {

@@ -42,7 +42,7 @@ class AddVC: UIViewController, UITextFieldDelegate {
             deleteButton.isHidden = false
             failedButton.isHidden = false
             
-            if goal.done == 1 {
+            if goal.done == 0 {
                 markAsDoneButton.isHidden = false
             }
             
