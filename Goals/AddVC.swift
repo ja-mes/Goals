@@ -104,6 +104,8 @@ class AddVC: UIViewController, UITextFieldDelegate {
             
             appDel.saveContext()
             
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "reloadTableView"), object: nil)
+            
             dismiss(animated: true, completion: nil)
         } else {
             displayAlert(title: "Oops!", message: "You forgot to fill out the name field")

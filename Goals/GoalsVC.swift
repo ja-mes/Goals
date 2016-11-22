@@ -31,6 +31,9 @@ class GoalsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSF
         self.view.addGestureRecognizer(longPressRecognizer)
         
         
+        NotificationCenter.default.addObserver(self, selector: #selector(reloadTableView(notification:)), name: NSNotification.Name("reloadTableView"), object: nil)
+        
+        
         if UserDefaults.standard.object(forKey: "firstLaunch") == nil {
             let page1 = EAIntroPage()
             page1.title = "Swipe to continue"
@@ -269,6 +272,11 @@ class GoalsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSF
                 appDel.saveContext()
             }
         }
+    }
+    
+    func reloadTableView(notification: Notification) {
+        fetchGoals()
+        tableView.reloadData()
     }
 }
 
