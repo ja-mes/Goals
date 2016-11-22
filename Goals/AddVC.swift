@@ -16,6 +16,7 @@ class AddVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var deleteButton: RoundedButton!
     @IBOutlet weak var markAsDoneButton: RoundedButton!
     @IBOutlet weak var failedButton: RoundedButton!
+    @IBOutlet weak var tryAgainButton: RoundedButton!
     
     var goal: Goal?
     var color: String?
@@ -41,12 +42,13 @@ class AddVC: UIViewController, UITextFieldDelegate {
             name.text = goal.name
             deleteButton.isHidden = false
             
-            if goal.done != 1 {
+            if goal.done == 0 {
                 markAsDoneButton.isHidden = false
-            }
-            if goal.done != 2 {
                 failedButton.isHidden = false
+            } else {
+                tryAgainButton.isHidden = false
             }
+           
             
             if let date = goal.date as? Date {
                 datePicker.setDate(date, animated: true)
@@ -157,6 +159,16 @@ class AddVC: UIViewController, UITextFieldDelegate {
             
             
             dismiss(animated: true, completion: nil)
+        }
+    }
+    
+    @IBAction func tryAgainPressed(_ sender: RoundedButton) {
+        if let goal = goal {
+            goal.done = 0
+            appDel.saveContext()
+            
+            dismiss(animated: true, completion: nil)
+            
         }
     }
     
