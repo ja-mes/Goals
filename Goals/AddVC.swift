@@ -167,7 +167,8 @@ class AddVC: UIViewController, UITextFieldDelegate {
             
             sender.selectedColor = true
             
-            if let currentColor = oldSelectedColor {
+        
+            if let oldColor = oldSelectedColor {
                 currentColor.selectedColor = false
             }
             
